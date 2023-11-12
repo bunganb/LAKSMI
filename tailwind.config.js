@@ -14,6 +14,62 @@ module.exports = {
         kufam: 'kufam',
         dmSans: 'dm-sans',
       },
+      fontSize: {
+        h1: [
+          '2.5rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        h2: [
+          '2rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        h3: [
+          '1.75rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        h4: [
+          '1.5rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        h5: [
+          '1.25rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        h6: [
+          '1rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        sub: [
+          '1.25rem',
+          {
+            fontWeight: '400',
+          },
+        ],
+        label: [
+          '1rem',
+          {
+            fontWeight: '700',
+          },
+        ],
+        body: [
+          '0.9375rem',
+          {
+            fontWeight: '400',
+          },
+        ],
+      },
     },
   },
   plugins: [],
