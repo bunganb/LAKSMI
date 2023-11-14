@@ -1,10 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAKSMI</title>
-    <link rel="stylesheet" href="/dist/output.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAKSMI</title>
+  <link href="../src/img/logo1.svg" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/dist/output.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+</head>
+
+<body class="overflow-x-hidden bg-light">
+  <nav>
+  </nav>
+  <header class="flex items-center justify-center w-screen md:px-20 px-14 md:h-screen">
+    <div class="flex flex-col items-center gap-8 md:w-1/2 md:leading-loose hero-text md:items-start ">
+      <div
+        class="font-semibold leading-10 text-center text-h3 md:text-4xl xl:text-6xl text md:text-left hero-quote font-kufam">
+        <span class="relative inline-block h-2 before:block before:absolute before:-inset-1 before:bg-secondary">
+          <span class="relative">Satu Tindakan,</span>
+        </span>Banyak Perubahan. Yuk Gabung dengan <span class="text-primary">kami</span>
+      </div>
+      <button
+        class="flex items-center gap-1 px-2 py-1 text-xs font-semibold rounded md:px-3 md:py-2 md:text-lg text-light bg-primary font-dmSans">Mulai
+        Kontribusi <i data-lucide="move-right" class="text-xs"></i></button>
+    </div>
+    <div class="hidden w-1/2 hero-img md:block">
+      <img src="../src/img/hero-img.png" alt="" class="md:ml-20 md:w-4/5">
+    </div>
+  </header>
+  <main class="w-screen">
+    <!-- notice section -->
+    <div class="section-notice h-1/4 md:px-20 px-14 py-5 mt-10 md:mt-0 md:flex md:items-center bg-[#EEF9F7]">
+      <div class="notice-text md:flex-1 md:leading-10">
+        <h1 class="pb-3 text-h6 md:text-2xl">Keadaan <span class="text-primary">Bumi Kita</span></h1>
+        <h2 class="text-h5 md:text-4xl">Peringatan BMKG, <span
+            class="relative inline-block h-2 before:block before:absolute before:-inset-1 before:bg-danger">
+            <span class="relative">Bumi Kian Panas Mendidih</span>
+          </span>, Udah Terjadi di RI</h2>
+        <P class="py-3 text-xs md:text-lg text-[#979E9D]">Menurut BMKG, sampai tahun 2022, kenaikan suhu global mencapai
+          1,2 derajat
+          Celcius. Terjadi
+          tren kenaikan
+          suhu
+          yang terus meningkat. Di mana, tahun 2015-2022, merupakan tahun terpanas kelima sepanjang sejarah sejak
+          pasca-Revolusi Industri.</P>
+        <div class="src text-[#979E9D] text-xs md:text-lg flex items-center gap-3">
+          <div class="w-10 h-[1px] bg-[#979E9D] after:content-['']"></div>
+          <small>CNBC Indonesia</small>
+        </div>
+      </div>
+      <div class="hidden notice-img md:block md:flex-1">
+        <img src="../src/img/notice-img.png" alt="">
+      </div>
+    </div>
+    <!-- about us section -->
+    <div class="relative bg-fixed bg-center bg-cover h-[26rem]"
+      style="background-image: linear-gradient(rgba(39, 174, 161, 0.40), rgba(39, 174, 161, 0.40)),url('../src/img/plant2.jpg');">
+      <div class="relative boxes">
+        <div
+          class="relative w-4/5 rounded md:w-2/3 sm:w-[21rem] h-[20rem] sm:h-[16rem] md:h-[21rem] box bg-primary top-44">
+          <div
+            class="absolute w-full pl-20 pr-2 py-10 rounded md:px-24 sm:h-fit md:h-[21rem] h-fit box bg-light bottom-6 right-7">
+            <h1 class="mb-5 text-lg font-semibold md:text-2xl font-kufam">Siapasih Kami?</h1>
+            <p class="font-normal text-sm md:text-xl sm:text-xs font-dmSans text-[#4A4A4A]">
+              <img src="../src/img/logo.png" alt="Image description" class="float-left w-28">
+              adalah organisasi lingkungan yang berdedikasi untuk melindungi keberlanjutan alam dan mewujudkan
+              lingkungan yang lebih hijau. Didirikan oleh sekelompok individu yang peduli pada lingkungan, Laksmi
+              berusaha menginspirasi perubahan positif dalam perilaku dan kesadaran masyarakat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our comitment section -->
+    <div class="mt-52">
+      <div
+        class="flex flex-col text-center md:text-left md:flex-row md:justify-center section-commitment bg-[#DEF3F0] w-full items-center md:h-64 h-44 gap-4 md:gap-9 px-14 md:px-20 pt-7">
+        <div class="w-full md:w-2/4 img-side">
+          <img src="../src/img/banner.jpg" alt="" class="w-full rounded">
+        </div>
+        <div class="order-first w-full md:w-1/2 text-side md:order-none">
+          <h1 class="font-kufam text-h6 md:text-h3">Komitmen kami berupaya untuk menjaga bumi kita
+            <span class="text-primary">Lestari</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- bank sampah section -->
+    <div
+      class="mt-32 sm:mt-72 md:mt-40 lg:mt-20 section-bank-trash md:flex md:items-center text-dark md:px-20 px-14 text-opacity-90">
+      <div class="text-center bank-text md:w-1/2 md:text-left">
+        <h1 class="font-kufam text-h4 md:text-h1">Bank sampah Laks<span class="text-primary">mi</span>:
+          Investasi cerdas untuk Bumi</h1>
+        <p class="md:w-2/3 font-medium text-[#6B6B6B] my-4 font-dmSans md:text-lg">Cara baru mengatur sampah plastik
+          Temukan outlet Laks<span class="text-primary">mi</span> di sekitar kamu!</p>
+        <div class="flex justify-center md:justify-start">
+          <button
+            class="flex items-center gap-1 px-2 py-1 text-xs font-bold rounded md:px-3 md:py-2 md:text-lg bg-secondary font-dmSans">Selengkapnya
+            <i data-lucide="move-right" class="text-xs"></i>
+          </button>
+        </div>
+      </div>
+      <div class="bank-img md:w-1/2">
+        <img src="../src/img/bank-trash.png" alt="">
+      </div>
+    </div>
+    <!-- warning section -->
+    <div
+      class="flex flex-col items-center justify-center gap-6 text-center bg-fixed bg-center bg-cover text-light md:px-20 px-14 md:h-96 h-60 section-warning"
+      style="background-image: linear-gradient(rgba(39, 174, 161, 0.30), rgba(39, 174, 161, 0.30)),url('../src/img/banner1.png');">
+      <h1 class="text-2xl font-semibold md:text-h1 font-kufam md:w-2/3 md:leading-normal">Suhu Bumi mengalami
+        peningkatan setiap tahun
+        lohh</h1>
+      <button
+        class="flex items-center gap-1 px-2 py-1 text-xs font-semibold rounded md:px-3 md:py-2 md:text-lg text-light bg-primary font-dmSans">Mulai
+        Kontribusi <i data-lucide="move-right" class="text-xs"></i></button>
+    </div>
+    <!-- team section -->
+    <div class="mt-10 section-team">
+      <div>
+        <div class="splide" id="slider-team">
+          <div class="splide__arrows">
+            <button class=" bg-primary splide__arrow splide__arrow--prev">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
+            </button>
+            <button class=" bg-primary splide__arrow splide__arrow--next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
+            </button>
+          </div>
+          <div class="splide__track py-7">
+            <ul class="splide__list">
+              <li class="w-full px-4 splide__slide lg:max-w-lg">
+                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                  <div class="flex flex-col items-center justify-center py-6 content">
+                    <div class="relative mx-auto rounded-full img-profile">
+                      <img src="../src/img/bg-profile.svg" alt="" class="">
+                      <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                        <img src="../src/img/profile3.jpg" class="object-cover rounded-full aspect-square w-80 md:w-48">
+                      </div>
+                    </div>
+                    <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Mega</h1>
+                    <h5 class="font-medium font-dmSans text-primary">Co-Founder</h5>
+                    <div
+                      class="absolute bottom-0 flex items-center justify-center w-1/2 gap-3 py-2 text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="instagram"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="facebook"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="w-full px-4 splide__slide lg:max-w-lg">
+                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                  <div class="flex flex-col items-center justify-center py-6 content">
+                    <div class="relative mx-auto rounded-full img-profile">
+                      <img src="../src/img/bg-profile.svg" alt="" class="">
+                      <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                        <img src="../src/img/profile.jpg" class="object-cover rounded-full aspect-square w-80 md:w-48">
+                      </div>
+                    </div>
+                    <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mas Ali</h1>
+                    <h5 class="font-medium font-dmSans text-primary">Founder</h5>
+                    <div
+                      class="absolute bottom-0 flex items-center justify-center w-1/2 gap-3 py-2 text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="instagram"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="facebook"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="w-full px-4 splide__slide lg:max-w-lg">
+                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                  <div class="flex flex-col items-center justify-center py-6 content">
+                    <div class="relative mx-auto rounded-full img-profile">
+                      <img src="../src/img/bg-profile.svg" alt="" class="">
+                      <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                        <img src="../src/img/profile4.jpg" class="object-cover rounded-full aspect-square w-80 md:w-48">
+                      </div>
+                    </div>
+                    <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Siti</h1>
+                    <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                    <div
+                      class="absolute bottom-0 flex items-center justify-center w-1/2 gap-3 py-2 text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="instagram"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="facebook"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="w-full px-4 splide__slide lg:max-w-lg">
+                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                  <div class="flex flex-col items-center justify-center py-6 content">
+                    <div class="relative mx-auto rounded-full img-profile">
+                      <img src="../src/img/bg-profile.svg" alt="" class="">
+                      <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                        <img src="../src/img/profile6.png" class="object-cover rounded-full aspect-square w-80 md:w-48">
+                      </div>
+                    </div>
+                    <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Sinta</h1>
+                    <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                    <div
+                      class="absolute bottom-0 flex items-center justify-center w-1/2 gap-3 py-2 text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="instagram"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="facebook"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="w-full px-4 splide__slide lg:max-w-lg">
+                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                  <div class="flex flex-col items-center justify-center py-6 content">
+                    <div class="relative mx-auto rounded-full img-profile">
+                      <img src="../src/img/bg-profile.svg" alt="" class="">
+                      <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                        <img src="../src/img/profile5.png" class="object-cover rounded-full aspect-square w-80 md:w-48">
+                      </div>
+                    </div>
+                    <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mas Asep</h1>
+                    <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                    <div
+                      class="absolute bottom-0 flex items-center justify-center w-1/2 gap-3 py-2 text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="instagram"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="facebook"></i>
+                      </div>
+                      <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                        <i data-lucide="youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-support bg-[#EEF9F7] md:px-20 px-10 py-10 text-center">
+      <h1 class="text-xl font-bold font-kufam md:text-3xl">Mitra yang bergabung dengan kami</h1>
+      <div class="splide" id="slider-mitra">
+        <div class="splide__arrows">
+          <button class=" bg-primary splide__arrow splide__arrow--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </button>
+          <button class=" bg-primary splide__arrow splide__arrow--next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </button>
+        </div>
+        <div class="splide__track py-7">
+          <ul class="splide__list">
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/aqua.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/unicef.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/telkomsel.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/who.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/bpjs.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/pertamina.svg" alt="" class="grayscale">
+            </li>
+            <li class="splide__slide sm:max-w-sm">
+              <img src="../src/img/mandiri.svg" alt="" class="grayscale">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="py-10 section-articels md:px-20 mx-14">
+      <div class="flex items-center justify-between header ">
+        <h1 class="text-2xl font-kufam">Artikel Buat <span class="text-primary">Kamu</span></h1>
+        <a href="#" class="font-medium underline text-primary">Kepoin Kegiatan Kami</a>
+      </div>
+      <div class="grid gap-3 md:grid-cols-3 articels ">
+        <div class="col-span-2 bg-primary">1</div>
+        <div class="hidden col-span-1 bg-secondary md:block">2</div>
+      </div>
+    </div>
+    <div class="section-photo "></div>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script>
+    let slider_team = new Splide('#slider-team', {
+      rewind: true,
+      perPage: 5,
+      breakpoints: {
+        1440: {
+          perPage: 4,
+        },
+        760: {
+          perPage: 3,
+        },
+        300: {
+          perPage: 1,
+        }
+      },
+    }).mount();
+    let slider_mitra = new Splide('#slider-mitra', {
+      rewind: true,
+      grid: {
+        rows: 2,
+        cols: 4,
+        gap: {
+          row: '1rem',
+        },
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+</body>
+
 </html>

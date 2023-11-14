@@ -3,6 +3,11 @@ module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
     extend: {
+      screens: {
+        xl: '1440px',
+        md: '760px',
+        sm: '300px',
+      },
       colors: {
         primary: '#27AEA1',
         secondary: '#E5BC40',
@@ -11,8 +16,8 @@ module.exports = {
         light: '#F9F9F9',
       },
       fontFamily: {
-        kufam: 'kufam',
-        dmSans: 'dm-sans',
+        kufam: ['kufam', 'system-ui'],
+        dmSans: ['DM Sans', 'system-ui'],
       },
       fontSize: {
         h1: [
