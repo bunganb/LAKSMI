@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,47 +8,72 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
+
 <body class="h-screen xl:h-fit bg-gradient-to-b from-customteal1 to-customteal2 bg-light">
     <!-- register -->
-    <div class="flex xl:flex-row flex-col w-full min-h-screen overflow-y-hidden">
+    <div class="flex flex-col w-full min-h-screen overflow-y-hidden xl:flex-row">
         <div class="">
-            <h1 class="hidden ml-20 mt-16 leading-snug z-10 xl:block font-semibold text-5xl text-teal-600 font-kufam text-shadow shadow-primary shadow-offset-y-2 shadow-blur-0">Aksi nyata menuju Indonesia maju!</h1>
-            <p class="hidden ml-20 mt-2.5 leading-normal lg:block font-medium tracking-wide text-2xl font-dmSans text-primary">Selamat datang di website resmi <br>komunitas <span class="text-dark">Laks</span>mi Indonesia</p>
-            <img class="sm:hidden md:block absolute top-3 left-3 lg:left-0 lg:bottom-0 lg:top-auto rounded-tl-lg rounded-br-[2.5rem] lg:rounded-tr-[2.5rem] lg:rounded-br-none w-fit bg-light box-content z-10 h-9 xl:h-8 p-4 lg:px-5" src="../src/assets/logo-2.svg" alt="" srcset="">
-            <img class="sm:-left-5 sm:-top-[6.5rem] md:bottom-0 md:left-0 md:top-auto md:h-[80%] lg:-bottom-0 lg:left-0 xl:-left-[8rem] lg:scale-100 lg:h-[60%] xl:h-[67%] transform transition-transform duration-300 ease-in-out absolute" src="../src/assets/green.png" alt="green">
+            <h1
+                class="z-10 hidden mt-16 ml-20 text-5xl font-semibold leading-snug text-teal-600 xl:block font-kufam text-shadow shadow-primary shadow-offset-y-2 shadow-blur-0">
+                Aksi nyata menuju Indonesia maju!</h1>
+            <p
+                class="hidden ml-20 mt-2.5 leading-normal lg:block font-medium tracking-wide text-2xl font-dmSans text-primary">
+                Selamat datang di website resmi <br>komunitas <span class="text-dark">Laks</span>mi Indonesia</p>
+            <img class="sm:hidden md:block absolute top-3 left-3 lg:left-0 lg:bottom-0 lg:top-auto rounded-tl-lg rounded-br-[2.5rem] lg:rounded-tr-[2.5rem] lg:rounded-br-none w-fit bg-light box-content z-10 h-9 xl:h-8 p-4 lg:px-5"
+                src="../src/assets/logo-2.svg" alt="" srcset="">
+            <img class="sm:-left-5 sm:-top-[6.5rem] md:bottom-0 md:left-0 md:top-auto md:h-[80%] lg:-bottom-0 lg:left-0 xl:-left-[8rem] lg:scale-100 lg:h-[60%] xl:h-[67%] transform transition-transform duration-300 ease-in-out absolute"
+                src="../src/assets/green.png" alt="green">
         </div>
 
         <div class="flex md:mt-24 lg:mt-0 w-full md:mx-auto md:w-[80%] lg:mx-0 lg:w-fit lg:h-full flex-col">
-            <img class="h-screen hidden top-0 xl:block absolute" src="../src/assets/bg-reg.svg" alt="bg">
-            <div class="mt-16 lg:mt-0 z-10 sm:rounded-t-3xl md:rounded-tl-[50px] md:rounded-br-[50px] md:rounded-tr-none lg:rounded-none border-[6px] border-slate-100 bg-light md:border-0 lg:h-screen xl:px-36 lg:pr-40 lg:ml-28">
-                <h1 class="font-kufam sm:text-lg md:text-3xl font-semibold text-gray-600 text-center sm:pt-7 md:pt-14 lg:pt-20 xl:pt-28">Selamat datang kembali</h1>
+            <img class="absolute top-0 hidden h-screen xl:block" src="../src/assets/bg-reg.svg" alt="bg">
+            <div
+                class="mt-16 lg:mt-0 z-10 sm:rounded-t-3xl md:rounded-tl-[50px] md:rounded-br-[50px] md:rounded-tr-none lg:rounded-none border-[6px] border-slate-100 bg-light md:border-0 lg:h-screen xl:px-36 lg:pr-40 lg:ml-28">
+                <h1
+                    class="font-semibold text-center text-gray-600 font-kufam sm:text-lg md:text-3xl sm:pt-7 md:pt-14 lg:pt-20 xl:pt-28">
+                    Selamat datang kembali</h1>
                 <form action="" class="flex flex-col px-5 pt-6 md:px-16 md:pt-9 lg:px-5 lg:pt-14 font-dmSans">
                     <div class="mb-1 md:mb-2.5">
-                        <label for="" class="tracking-wider md:tracking-wide text-gray-600 text-xs md:text-base lg:text-lg mx-2 lg:mx-0 font-semibold">Alamat e-mail</label>
+                        <label for=""
+                            class="mx-2 text-xs font-semibold tracking-wider text-gray-600 md:tracking-wide md:text-base lg:text-lg lg:mx-0">Alamat
+                            e-mail</label>
                     </div>
-                    <div class="bg-slate-50 flex mb-2 md:mb-5 justify-between ring-1 ring-customteal1 focus-within:input:ring-primary px-4 mx-2 lg:mx-0 rounded-lg">
-                        <input type="text" placeholder="Masukkan e-mail" class="placeholder-gray-400 rounded-lg font-regular text-sm md:text-lg text-gray-700 py-2 md:py-3 bg-slate-50 outline-none">
-                        <i class="text-sm text-gray-400 h-4 md:h-5 my-auto" data-lucide="mail"></i>
+                    <div
+                        class="flex justify-between px-4 mx-2 mb-2 rounded-lg bg-slate-50 md:mb-5 ring-1 ring-customteal1 focus-within:input:ring-primary lg:mx-0">
+                        <input type="text" placeholder="Masukkan e-mail"
+                            class="py-2 text-sm text-gray-700 placeholder-gray-400 rounded-lg outline-none font-regular md:text-lg md:py-3 bg-slate-50">
+                        <i class="h-4 my-auto text-sm text-gray-400 md:h-5" data-lucide="mail"></i>
                     </div>
                     <div class="mb-1 md:mb-2.5">
-                        <label for="" class="tracking-wider md:tracking-wide text-gray-600 text-xs md:text-base lg:text-lg mx-2 lg:mx-0 font-semibold">Password</label>
+                        <label for=""
+                            class="mx-2 text-xs font-semibold tracking-wider text-gray-600 md:tracking-wide md:text-base lg:text-lg lg:mx-0">Password</label>
                     </div>
-                    <div class="bg-slate-50 flex mb-2 justify-between ring-1 ring-customteal1 focus-within:input:ring-primary px-4 mx-2 lg:mx-0 rounded-lg">
-                        <input type="text" placeholder="Masukkan password" class="placeholder-gray-400 rounded-lg font-regular text-sm md:text-lg text-gray-700 py-2 md:py-3 bg-slate-50 outline-none">
-                        <i class="text-sm text-gray-400 h-4 md:h-5 my-auto" data-lucide="eye"></i>
+                    <div
+                        class="flex justify-between px-4 mx-2 mb-2 rounded-lg bg-slate-50 ring-1 ring-customteal1 focus-within:input:ring-primary lg:mx-0">
+                        <input type="text" placeholder="Masukkan password"
+                            class="py-2 text-sm text-gray-700 placeholder-gray-400 rounded-lg outline-none font-regular md:text-lg md:py-3 bg-slate-50">
+                        <i class="h-4 my-auto text-sm text-gray-400 md:h-5" data-lucide="eye"></i>
                     </div>
-                    <sub class="flex items-center justify-center text-gray-400 before:h-[1px] after:h-[1px] before:bg-gray-300 after:bg-gray-300 before:w-[105px] after:w-[105px] 
+                    <sub
+                        class="flex items-center justify-center text-gray-400 before:h-[1px] after:h-[1px] before:bg-gray-300 after:bg-gray-300 before:w-[105px] after:w-[105px] 
                     md:before:w-[11.2rem] md:after:w-[11.2rem] w-full before:relative after:relative before:right-2 after:left-2 md:before:right-5 md:after:left-5 text-sm md:text-xl my-5">atau</sub>
-                    <p class="text-sm md:text-xl font-normal md:font-medium md:tracking-wide flex text-primary items-center justify-center underline">Masuk sebagai anonim <i class="h-4 md:h-5 my-auto" data-lucide="arrow-right"></i></p>
-                    <div class="flex justify-center items-center my-5 md:my-6 lg:mt-8">
-                        <img class="h-5 md:h-7 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer box-content ring-1 ring-customteal1 rounded-md p-2.5 md:p-3.5 mx-2 md:mx-2.5" src="../src/assets/google.svg" alt="" srcset="">
-                        <img class="h-5 md:h-7 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer box-content ring-1 ring-customteal1 rounded-md p-2.5 md:p-3.5 mx-2 md:mx-2.5" src="../src/assets/fb.svg" alt="" srcset="">
+                    <p
+                        class="flex items-center justify-center text-sm font-normal underline md:text-xl md:font-medium md:tracking-wide text-primary">
+                        Masuk sebagai anonim <i class="h-4 my-auto md:h-5" data-lucide="arrow-right"></i></p>
+                    <div class="flex items-center justify-center my-5 md:my-6 lg:mt-8">
+                        <img class="h-5 md:h-7 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer box-content ring-1 ring-customteal1 rounded-md p-2.5 md:p-3.5 mx-2 md:mx-2.5"
+                            src="../src/assets/google.svg" alt="" srcset="">
+                        <img class="h-5 md:h-7 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer box-content ring-1 ring-customteal1 rounded-md p-2.5 md:p-3.5 mx-2 md:mx-2.5"
+                            src="../src/assets/fb.svg" alt="" srcset="">
                     </div>
-                    <button type="submit" class="my-3 justify-center items-center rounded-lg bg-primary hover:bg-teal-600 font-medium text-sm md:text-xl text-light py-2 md:py-3 flex">
+                    <button type="submit"
+                        class="flex items-center justify-center py-2 my-3 text-sm font-medium rounded-lg bg-primary hover:bg-teal-600 md:text-xl text-light md:py-3">
                         <span>Masuk</span>
                         <i class="h-4 md:h-5" data-lucide="arrow-right"></i>
                     </button>
-                    <p class="pb-5 md:pb-7 text-sm md:text-xl font-normal flex text-gray-400 justify-center">Belum punya akun?<a class="px-2 underline text-primary font-medium" href="../pages/regist.html">Buat akun</a></p>
+                    <p class="flex justify-center pb-5 text-sm font-normal text-gray-400 md:pb-7 md:text-xl">Belum punya
+                        akun?<a class="px-2 font-medium underline text-primary" href="../pages/regist.html">Buat
+                            akun</a></p>
                 </form>
             </div>
         </div>
@@ -56,4 +82,5 @@
     <script src="../src/scripts/script.js"></script>
     <script> lucide.createIcons(); </script>
 </body>
+
 </html>
