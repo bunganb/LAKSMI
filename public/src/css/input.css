@@ -6,6 +6,6 @@
 }
 @font-face {
   font-family: 'kufam';
-  src: url('../fonts/Kufam/Kufam-VariableFont_wght.ttf');
+  src: url('../fonts/Kufam/Kufam-Regular.ttf');
 }
 @tailwind utilities;

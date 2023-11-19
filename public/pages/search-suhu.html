@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Suhu Daerah</title>
+    <link href="../src/img/logo1.svg" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="relative flex items-center justify-between px-6 pt-4 md:px-15 lg:px-20 bg-[#D4EFEC]">
+        <a href="">
+            <img class="w-4/5 cursor-pointer md:w-full" src="../src/img/logo.svg" alt="Logo">
+        </a>
+        <button class="flex items-center p-2 border-2 rounded-md lg:hidden navbar-burger text-dark border-primary">
+            <svg class="block w-3 h-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </button>
+        <ul
+            class="absolute hidden font-semibold transform -translate-x-1/2 -translate-y-1/2 font-dmSans top-1/2 left-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Beranda</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Aktivitas</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Artikel</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#about-us">Tentang kami</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#contact">Kontak</a></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-1.5 px-4 bg-primary hover:bg-teal-600 hover:border-teal-600 border-2 border-primary text-sm text-light font-normal rounded-md transition duration-200"
+            href="#">Daftar</a>
+        <a class="hidden lg:inline-block py-1.5 px-4  hover:border-teal-600  text-sm hover:text-primary text-dark font-normal rounded-md transition duration-200"
+            href="#">Masuk</a>
+    </nav>
+    <div class="relative z-50 hidden navbar-menu">
+        <nav
+            class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none cursor-pointer" href="#">
+                    <img class="h-10 lg:h-12" src="../src/img/logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-close">
+                    <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold rounded text-dark hover:text-primary hover:bg-teal-50"
+                            href="#">Beranda</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Aktivitas</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Artikel</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#about-us">Tentang Kami</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center bg-gray-50 hover:bg-gray-100 rounded-xl"
+                        href="regist.html">Daftar</a>
+                    <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary hover:bg-teal-600 rounded-xl"
+                        href="login.html">Masuk</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Laksmi Team © 2023</span>
+                </p>
+            </div>
+        </nav>
+    </div>
+    <!-- hero -->
+    <header
+        class="grid grid-cols-1 justify-center px-7 items-center md:px-16 lg:px-24 md:grid-cols-2 bg-[#D4EFEC]  w-screen h-[30rem] py-10">
+        <div class="text-center hero-title md:text-left">
+            <h1 class="relative font-bold xl:text-6xl lg:text-5xl md:w-4/5 sm:text-4xl md:text-4xl title font-kufam">
+                Peta Kualitas
+                <span class="relative w-full">
+                    <span class="relative z-10">udara</span>
+                    <span class="absolute left-0 z-0 lg:bottom-2 md:-bottom-1 sm:-bottom-3"><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="xl:w-[180px] lg:w-[150px] md:w-[120px] w-[100px] sm:h-10" viewBox="0 0 212 25"
+                            fill="none">
+                            <path d="M5.09509 0H212L206.905 25H0L5.09509 0Z" fill="#27AEA1" fill-opacity="0.8" />
+                        </svg></span>
+                </span>
+                Indonesia
+            </h1>
+            <h3 class="my-5 text-sm font-medium md:text-lg sub font-dmSans">Ketahui kualitas udara di daerahmu </h3>
+            <div class="flex items-center justify-center lg:justify-normal search">
+                <i data-lucide="search" class="w-10 h-10 p-2 rounded-s-full bg-light"></i>
+                <input type="text" class="w-4/5 p-2 outline-none placeholder:text-slate-400 rounded-e-full bg-light"
+                    placeholder="cari di sini...">
+            </div>
+        </div>
+        <div class="flex justify-center hero-card">
+            <div
+                class="flex items-center gap-2 px-4 py-5 shadow-lg lg:gap-4 lg:px-6 rounded-xl w-fit lg:py-7 card bg-light h-fit">
+                <div class="flex-none">
+                    <h1 class="mb-6 text-3xl font-bold lg:text-4xl font-kufam text-danger">150 <span
+                            class="text-sm lg:text-lg font-kufam text-dark">AQI</span> </h1>
+                    <h2 class="font-kufam text-dark">Status : </h2>
+                    <div
+                        class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs lg:px-5 lg:py-2 text-danger status bg-danger bg-opacity-20">
+                        <i data-lucide="alert-circle"></i>
+                        <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                    </div>
+                </div>
+                <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-7 bg-primary">
+                    <h4 class="text-sm lg:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023</h4>
+                    <h2 class="my-3 text-lg font-bold leading-5 lg:text-2xl font-kufam text-light pr-7">
+                        Banyuwangi,<br>Jawa Timur
+                    </h2>
+                    <a href="#"
+                        class="flex items-center float-right text-xs lg:text-sm px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                        <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-3 md:mx-20 mx-14">
+        <div class="grid grid-cols-1 gap-4 my-8 md:grid-cols-5 ">
+            <div class="md:col-span-2 rank">
+                <div class="w-full p-8 shadow-2xl rounded-xl card text-dark bg-light h-fit">
+                    <h3 class="font-semibold text-body font-kufam">Ketahui kualitas udara daerah lain
+                    </h3>
+                    <h2 class="w-4/5 text-xl font-semibold font-kufam lg:text-2xl">Peringkat Kota dengan kualitas udara
+                        <span class="text-danger">terburuk</span>
+                    </h2>
+                    <table class="w-full mt-4 border-separate border-spacing-2">
+                        <thead class="font-bold font-kufam">
+                            <tr>
+                                <th class="text-center">No.</th>
+                                <th class="text-left">Kota</th>
+                                <th class="text-center">Aqi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-medium text-gray-600 font-dmSans">
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Jakarta</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-danger bg-danger">159</span>
+                                </td>
+                            </tr>
+                            <tr class="space">
+                                <td class="text-center">2</td>
+                                <td>Denpasar, Bali</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-danger bg-danger">155</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Surabaya</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-danger bg-danger">148</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td>Banten</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-danger bg-danger">140</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td>Palembang</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">120</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td>Bogor</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">119</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td>Jambi</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">112</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">8</td>
+                                <td>Pekan Baru</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">109</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">9</td>
+                                <td>Bandung</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">109</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">10</td>
+                                <td>Pontianak</td>
+                                <td class="text-center"><span
+                                        class="px-2.5 py-1 bg-opacity-25 rounded-full text-secondary bg-secondary">102</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-full mt-6 articels">
+                    <h1 class="flex items-center gap-3 text-xl font-bold font-kufam md:text-2xl ">
+                        <span class="before:block before:bg-primary before:h-9 before:w-1"></span>
+                        Baca
+                        Artikel
+                    </h1>
+                    <div class="flex flex-col gap-3 mt-3 articels-card md:flex-row">
+                        <div class="flex items-center gap-4 card">
+                            <img src="../src/img/articels1.png" class="w-24 h-24 rounded-md" alt="">
+                            <div class="tumbnail-text">
+                                <h6 class="flex items-center gap-2 font-medium text-gray-500 font-dmSans"> <span
+                                        class="before:block before:bg-primary before:h-1 before:w-9"></span> Edukasi
+                                </h6>
+                                <h5 class=" md:text-sm lg:font-semibold font-dmSans">Udara makin buruk!
+                                    Segera
+                                    gunakan...
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 card">
+                            <img src="../src/img/articels1.png" class="w-24 h-24 rounded-md" alt="">
+                            <div class="tumbnail-text">
+                                <h6 class="flex items-center gap-2 font-medium text-gray-500 font-dmSans"> <span
+                                        class="before:block before:bg-primary before:h-1 before:w-9"></span> Edukasi
+                                </h6>
+                                <h5 class=" md:text-sm lg:font-semibold font-dmSans">Menanam 200 pohon
+                                    mangrove di pantai pulau...
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 card-section md:col-span-3 box md:grid-cols-2">
+                <h1 class="text-2xl font-bold md:col-span-2 lg:text-4xl font-kufam">Kualitas udara daerah</h1>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-danger">158 <span
+                                    class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span> </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-danger status bg-danger bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                DKI Jakarta
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-danger">155 <span
+                                    class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span> </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-danger status bg-danger bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Denpasar,<br>Bali
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-secondary">148
+                                <span class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span>
+                            </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-secondary status bg-secondary bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Surabaya,<br>Jawa Timur
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-danger">140 <span
+                                    class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span> </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-danger status bg-danger bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Banten
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-secondary">115
+                                <span class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span>
+                            </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-secondary status bg-secondary bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Bogor
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-secondary">120
+                                <span class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span>
+                            </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-secondary status bg-secondary bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Palembang
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-secondary">102
+                                <span class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span>
+                            </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-secondary status bg-secondary bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Pontianak
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 lg:col-span-1 boxes">
+                    <div
+                        class="flex items-center gap-2 px-4 py-5 shadow-lg sm:w-full sm:h-full lg:gap-4 xl:px-6 rounded-xl w-fit xl:py-7 card bg-light h-fit">
+                        <div class="flex-none">
+                            <h1 class="mb-6 text-3xl font-bold lg:text-3xl xl:text-4xl font-kufam text-secondary">109
+                                <span class="text-sm lg:text-[14px] xl:text-lg font-kufam text-dark">AQI</span>
+                            </h1>
+                            <h2 class="font-kufam text-dark">Status : </h2>
+                            <div
+                                class="flex items-center gap-2 p-2 mt-2 rounded-full sm:text-xs xl:px-5 xl:py-2 text-secondary status bg-secondary bg-opacity-20">
+                                <i data-lucide="alert-circle"></i>
+                                <h4 class="text-xs font-semibold lg:text-sm font-dmSans ">Sangat Buruk</h4>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-4 pl-4 rounded-lg shadow-lg lg:pl-4 xl:pl-7 bg-primary">
+                            <h4 class="text-xs lg:text-sm xl:text-lg font-dmSans text-light pr-7">Sabtu, 28 Oktober 2023
+                            </h4>
+                            <h2
+                                class="my-3 text-lg font-bold leading-5 lg:text-xl xl:text-2xl font-kufam text-light pr-7">
+                                Bandung
+                            </h2>
+                            <a href="#"
+                                class="flex items-center float-right text-xs lg:text-sm  px-1.5 py-1 mb-2 mr-2 font-semibold lg:px-5 lg:py-2 rounded-tl-xl rounded-br-xl font-dmSans text-dark bg-light">Detail
+                                <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center lg:col-span-2 btn">
+                    <button
+                        class="px-3 py-2 font-semibold rounded-lg bg-primary font-dmSans text-light md:text-lg">Lebih
+                        Banyak</button>
+                </div>
+            </div>
+        </div>
+        <div class="quote mt-7">
+            <h1 class="text-3xl font-bold text-center font-kufam">Hubungi <span class="text-primary">Kami</span></h1>
+            <div class="flex items-center px-10 py-4 mt-3 bg-center bg-cover rounded-md h-52 contact-box"
+                style="background-image: linear-gradient(99deg, #27AEA1 17.28%, rgba(39, 174, 161, 0.00) 125.79%), url('../src/img/plant2.jpg');">
+                <h1 class="w-1/2 text-2xl font-semibold text-light font-kufam lg:text-4xl" style="line-height: 40px;">
+                    Tingkatkan
+                    kualitas
+                    udara
+                    bisa dimulai
+                    dari kamu!
+                </h1>
+            </div>
+        </div>
+    </main>
+    <footer class="px-8 py-6 my-8 rounded-md font-dmSans text-dark bg-opacity-10 bg-primary md:mx-20 mx-14">
+        <div class="links md:flex">
+            <div class="lg:w-1/4 address">
+                <img src="../src/img/logo.svg" alt="" class="w-32 lg:w-52">
+                <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
+                <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
+                    Timur</p>
+            </div>
+            <div class="lg:w-1/4 info">
+                <h2 class="text-sm font-semibold lg:text-lg ">Info</h2>
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Tentang Kami</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Keadaan daerahmu</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Mitra</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Daftar</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold lg:w-1/4 services">
+                <h2 class="text-sm lg:text-lg">Layanan</h2>
+                <div class="w-1/2 h-0.5 line opacity-50 bg-primary rounded"></div>
+                <div class="item-links ">
+                    <a href="#" class="block text-xs font-normal leading-6 hover:underline lg:text-base">Artikel</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Bank Sampah</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Kegiatan Relawan</a>
+                </div>
+            </div>
+            <!-- <div class="news lg:w-1/4">
+            <h2 class="text-sm font-semibold lg:text-lg">Berita</h2>
+            <div class="w-1/2 h-0.5 line opacity-50 my-3 bg-primary rounded"></div>
+            <a href="#">
+              <div class="flex items-center gap-2 my-2 card">
+                <img src="../src/img/suhu.jpg" alt="" class="object-cover w-1/4 rounded-full aspect-square">
+                <div class="text">
+                  <h2 class="text-xs font-semibold md:text-base">Suhu Terus meningkat menyebab...</h2>
+                  <small class="text-primary">4 Hari Yang lalu</small>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="flex items-center gap-2 card">
+                <img src="../src/img/suhu.jpg" alt="" class="object-cover w-1/4 rounded-full aspect-square">
+                <div class="text">
+                  <h2 class="text-xs font-semibold md:text-base">Suhu Terus meningkat menyebab...</h2>
+                  <small class="text-primary">2 Hari Yang lalu</small>
+                </div>
+              </div>
+            </a>
+          </div> -->
+            <div class="text-lg font-semibold lg:w-1/4 contact" id="contact">
+                <h2 class="text-sm lg:text-lg">Hubungi</h2>
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="" class="block my-2 font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
+                            <i data-lucide="mail"></i>
+                            <span class="underline">timlaksmi@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="" class="block font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
+                            <i data-lucide="phone"></i>
+                            <span>0839-2394-2310</span>
+                        </div>
+                    </a>
+                    <div class="flex gap-2 mt-3 sosmed">
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="facebook"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-0.5  mt-2 line bg-primary opacity-50 rounded"></div>
+        <div class="mt-1 font-semibold text-center sm:text-xs copyright">
+            Laksmi Team ©2023
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../src/scripts/script.js"></script>
+
+</body>
+
+</html>
