@@ -14,7 +14,7 @@ module.exports = {
         secondary: '#E5BC40',
         danger: '#D83F31',
         dark: '#1E1E1E',
-        light: '#FDFDFD',
+        light: '#F9F9F9',
         customteal1: 'rgba(39, 174, 161, 0.25)',
         customteal2: 'rgba(39, 174, 161, 0.00)',
       },
