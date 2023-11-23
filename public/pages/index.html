@@ -10,6 +10,7 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+
 </head>
 
 <body class="overflow-x-hidden bg-light">
@@ -86,9 +87,13 @@
       <div
         class="text-center sm:font-semibold text-h3 md:text-3xl lg:text-5xl xl:text-6xl text md:text-left hero-quote font-kufam"
         style="line-height: 1.3;">
-        <span class="relative inline-block h-3 before:block before:absolute before:-inset-1 before:bg-secondary">
-          <span class="relative">Satu Tindakan,</span>
-        </span><br>Banyak Perubahan. <br> Yuk Gabung dengan <span class="text-primary md:break ">kami</span>
+        <div class="relative items-end inline-block lg:inline-flex">
+          <div class="absolute bottom-0 left-0 right-0 h-5 transform -skew-x-12 lg:h-8 bg-secondary"></div>
+          <span class="relative z-10">Satu Tindakan,</span>
+        </div>
+        <br>
+        Banyak Perubahan. <br>
+        Yuk Gabung dengan <span class="text-primary md:break ">kami</span>
       </div>
       <button
         class="flex items-center gap-1 px-2 py-1 text-xs font-semibold rounded md:px-3 md:py-2 md:text-lg text-light bg-primary font-dmSans">Mulai
@@ -103,10 +108,14 @@
     <div class="section-notice h-1/4 md:px-20 px-14 py-5 mt-10 md:mt-0 md:flex md:items-center bg-[#EEF9F7]">
       <div class="notice-text md:flex-1 md:leading-10">
         <h1 class="pb-3 text-h6 md:text-xl lg:text-2xl">Keadaan <span class="text-primary">Bumi Kita</span></h1>
-        <h2 class="text-h5 md:text-2xl lg:text-4xl">Peringatan BMKG, <span
-            class="relative inline-block h-2 before:block before:absolute before:-inset-1 before:bg-danger">
-            <span class="relative">Bumi Kian Panas Mendidih</span>
-          </span>, Udah Terjadi di RI</h2>
+        <h2 class="relative text-h5 md:text-2xl lg:text-4xl">
+          Peringatan BMKG,
+          <span class="relative inline-block">
+            <span class="relative z-20">Bumi Kian Panas Mendidih</span>
+            <span class="absolute bottom-0 left-0 right-0 h-2 transform -skew-x-12 lg:h-3 bg-danger"></span>
+          </span>,
+          Udah Terjadi di RI
+        </h2>
         <P class="py-3 text-xs md:text-lg text-[#979E9D]">Menurut BMKG, sampai tahun 2022, kenaikan suhu global mencapai
           1,2 derajat
           Celcius. Terjadi
