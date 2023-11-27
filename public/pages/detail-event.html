@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Halaman relawan</title>
+    <link href="../src/img/logo1.svg" rel="icon" type="image/x-icon" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="overflow-x-hidden bg-light">
+    <nav class="relative flex items-center justify-between px-6 pt-4 md:px-15 bg-light lg:px-20">
+        <a href="index.html">
+            <img alt="Logo" class="w-4/5 cursor-pointer md:w-full" src="../src/img/logo.svg">
+        </a>
+        <button class="flex items-center p-2 border-2 rounded-md navbar-burger text-dark border-primary lg:hidden">
+            <svg class="block w-3 h-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </button>
+        <ul
+            class="absolute hidden font-semibold transform -translate-x-1/2 -translate-y-1/2 font-dmSans left-1/2 top-1/2 lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Beranda</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Aktivitas</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Artikel</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#about-us">Tentang kami</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#contact">Kontak</a></li>
+        </ul>
+        <a class="bg-primary border-primary text-light hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 hover:bg-teal-600 lg:ml-auto lg:mr-3 lg:inline-block"
+            href="#">Daftar</a>
+        <a class="bg-light border-primary hover:text-primary text-dark hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 lg:inline-block"
+            href="#">Masuk</a>
+    </nav>
+    <div class="relative z-50 hidden navbar-menu">
+        <nav
+            class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none cursor-pointer" href="#">
+                    <img alt="Logo" class="h-10 lg:h-12" src="../src/img/logo.svg">
+                </a>
+                <button class="navbar-close">
+                    <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold rounded text-dark hover:text-primary hover:bg-teal-50"
+                            href="#">Beranda</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Aktivitas</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Artikel</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#about-us">Tentang Kami</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center rounded-xl bg-gray-50 hover:bg-gray-100"
+                        href="regist.html">Daftar</a>
+                    <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary rounded-xl hover:bg-teal-600"
+                        href="login.html">Masuk</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Laksmi Team © 2023</span>
+                </p>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="banner-section">
+            <div class="flex flex-col px-10 py-12 mt-3 bg-center bg-cover contact-box h-fit lg:gap-1 lg:px-20 lg:py-20"
+                style="background-image: linear-gradient(99deg, #27AEA1 17.28%, rgba(39, 174, 161, 0.00) 125.79%), url('../src/img/plant2.jpg');">
+                <h1 class="text-xl font-semibold text-light font-kufam md:w-1/2 lg:text-4xl">
+                    Detail Kegiatan Relawan
+                </h1>
+                <ul class="flex gap-2 text-sm font-semibold font-dmSans text-light md:text-base">
+                    <li class="flex items-center"><a href="#">Beranda</a> <i data-lucide="chevron-right"></i>
+                    </li>
+                    <li class="flex items-center"><a href="#">Kegiatan</a><i data-lucide="chevron-right"></i></li>
+                    <li class="flex items-center"><a href="#">Detail Kegiatan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gap-4 px-10 py-12 content-section bg-primary h-fit bg-opacity-10 md:flex lg:px-20 lg:py-20">
+            <div class="hidden w-1/2 img-section md:block">
+                <img alt="" class="object-cover rounded-md h-80" src="../src/img/plant.jpeg">
+            </div>
+            <div class="info-section text-dark md:w-1/2">
+                <h1 class="text-2xl font-bold font-kufam lg:w-4/6 lg:text-3xl">Santai di Pantai: Reboisasi di Pantai
+                </h1>
+                <p class="font-dmSans my-3 font-medium text-[#979E9D]">Kali Ini kita singgah ke Banyuwangi. Yok gabung
+                    dengan
+                    perjalanan
+                    kita ke Pantai
+                    Pulau Santen</p>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-primary h-16 w-1.5"></span>
+                        <div class="text-section">
+                            <h5 class="font-semibold font-kufam text-dark">Tempat</h5>
+                            <h6 class="font-dmSans text-xs font-medium text-[#979E9D] md:text-sm">Jembatan Pantai Pulau
+                                Santen
+                                Banyuwangi
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-1 h-16 bg-primary"></span>
+                        <div class="text-section">
+                            <h5 class="font-semibold font-kufam text-dark">Tanggal & Waktu</h5>
+                            <h6 class="font-dmSans text-xs font-medium text-[#979E9D] md:text-sm">15 Desember 2024
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-1 h-16 bg-primary"></span>
+                        <div class="text-section">
+                            <h5 class="font-semibold font-kufam text-dark">Biaya</h5>
+                            <h6 class="font-dmSans text-xs font-medium text-[#979E9D] md:text-sm">Rp. 20.000
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-1 h-16 bg-primary"></span>
+                        <div class="text-section">
+                            <h5 class="font-semibold font-kufam text-dark">Kordinator</h5>
+                            <h6 class="font-dmSans text-xs font-medium text-[#979E9D] md:text-sm">Mas Ali Ahmad
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-8 my-8 form-section md:mx-16 lg:mx-20">
+            <h1 class="text-3xl font-semibold font-kufam text-dark">Daftar Sekarang</h1>
+            <div class="flex items-center justify-center w-full h-full">
+                <div class="w-full md:w-1/2 form">
+                    <div class="mb-2">
+                        <label class="font-dmSans mb-3 block font-medium text-[#979E9D]" for="name">Nama
+                            Lengkap</label>
+                        <input
+                            class="border-b-primary md:w-4/5 w-full  rounded-lg border-2 border-x-[#CDE5E3] border-t-[#CDE5E3] px-3 py-1.5 outline-none"
+                            placeholder="Cth: Mas Ali" type="text">
+                    </div>
+                    <div class="mb-2">
+                        <label class="font-dmSans mb-3 block font-medium text-[#979E9D]" for="name" min=>No.
+                            Telp</label>
+                        <input
+                            class="border-b-primary md:w-4/5 w-full  rounded-lg border-2 border-x-[#CDE5E3] border-t-[#CDE5E3] px-3 py-1.5 outline-none"
+                            placeholder="Cth :  085489385212" type="number" min="0">
+                    </div>
+                    <div class="mb-2">
+                        <label class="font-dmSans mb-3 block font-medium text-[#979E9D]" for="name">Jenis
+                            Kelamin</label>
+                        <div class="flex gap-3 radio font-dmSans text-[#979E9D] ">
+                            <label for="lakilaki">
+                                <input id="laki-laki" class="mr-2" name="radio" type="radio">Laki-Laki
+                            </label>
+                            <label for="perempuan">
+                                <input id="perempuan" class="mr-2" name="radio" type="radio">Perempuan
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="font-dmSans mb-3 block font-medium text-[#979E9D]" for="name">Alamat</label>
+                        <textarea
+                            class="border-b-primary md:w-4/5 w-full  rounded-lg border-2 border-x-[#CDE5E3] border-t-[#CDE5E3] px-3 py-1.5 outline-none"
+                            placeholder="Cth :  Jl. Ikan Kapuas" type="number"></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <label class="font-dmSans mb-3 block font-medium text-[#979E9D]" for="name">Bukti
+                            Pembayaran</label>
+                        <input
+                            class="border-b-primary md:w-4/5 w-full  rounded-lg border-2 file:border-0 file:border-r-2 file:border-r-[#CDE5E3] file:bg-white file:rounded-none file:font-medium file:text-[#979E9D] text-[#979E9D] font-dmSans  border-x-[#CDE5E3] border-t-[#CDE5E3] px-3 py-1.5 outline-none"
+                            type="file">
+                    </div>
+                    <div class="my-5">
+                        <button
+                            class="flex items-center justify-center w-full gap-1 py-2.5 text-xs font-semibold text-center rounded shadow-lg md:w-4/5 md:text-lg text-light bg-primary font-dmSans">Daftar
+                            Sekarang </button>
+                    </div>
+                </div>
+                <div class="hidden h-full md:w-1/2 img md:block">
+                    <div class="relative w-10/12 rounded-md image bg-primary h-96">
+                        <img src="../src/img/banner.jpg"
+                            class="absolute object-cover h-full rounded-md -left-5 -bottom-6" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-10 py-10 h-fit benefit-section lg:px-20 bg-primary bg-opacity-10">
+            <h1 class="w-4/6 text-xl font-bold md:leading-tight md:w-1/4 md:text-3xl font-kufam text-dark"><span
+                    class="text-primary">Benefit</span>
+                Kegiatan
+                Relawan</h1>
+            <div class="flex flex-col gap-8 my-5 md:flex-row">
+                <div class="w-full h-32 bg-cover rounded-md md:h-80 md:w-1/2 img-section"
+                    style="background-image: linear-gradient(rgba(39, 174, 161, 0.40), rgba(39, 174, 161, 0.40)),url('../src/img/plant3.jpg ');">
+                </div>
+                <div class="w-full md:w-1/2 benefit-section">
+                    <p class="text-lg font-medium font-dmSans text-dark text-opacity-80">Apa aja sih benefit yang bisa
+                        didapat
+                        dari mengikuti
+                        kegiatan relawan di Laksmi ?</p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-center gap-3 text- font-kufam text-dark">
+                            <span class="p-2 rounded-full bg-primary text-light "><i data-lucide="check"
+                                    class="stroke-2" class="stroke-2"></i></span>
+                            Kontribusi Untuk Bumi
+                        </div>
+                        <div class="flex items-center gap-3 text- font-kufam text-dark">
+                            <span class="p-2 rounded-full bg-primary text-light "><i data-lucide="check"
+                                    class="stroke-2" class="stroke-2"></i></span>
+                            Kontribusi Untuk Bumi
+                        </div>
+                        <div class="flex items-center gap-3 text- font-kufam text-dark">
+                            <span class="p-2 rounded-full bg-primary text-light "><i data-lucide="check"
+                                    class="stroke-2" class="stroke-2"></i></span>
+                            Kontribusi Untuk Bumi
+                        </div>
+                        <div class="flex items-center gap-3 text- font-kufam text-dark">
+                            <span class="p-2 rounded-full bg-primary text-light "><i data-lucide="check"
+                                    class="stroke-2" class="stroke-2"></i></span>
+                            Kontribusi Untuk Bumi
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="px-8 py-6 mx-8 my-8 rounded-md font-dmSans text-dark bg-primary bg-opacity-10 md:mx-16">
+        <div class="links md:flex">
+            <div class="address lg:w-1/4">
+                <img alt="" class="w-32 lg:w-52" src="../src/img/logo.svg">
+                <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
+                <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
+                    Timur</p>
+            </div>
+            <div class="info lg:w-1/4">
+                <h2 class="text-sm font-semibold lg:text-lg">Info</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Tentang Kami</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Keadaan daerahmu</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Mitra</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Daftar</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold services lg:w-1/4">
+                <h2 class="text-sm lg:text-lg">Layanan</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block text-xs font-normal leading-6 hover:underline lg:text-base" href="#">Artikel</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Bank Sampah</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Kegiatan Relawan</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold contact lg:w-1/4" id="contact">
+                <h2 class="text-sm lg:text-lg">Hubungi</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block my-2 font-normal" href="">
+                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                            <i data-lucide="mail"></i>
+                            <span class="underline">timlaksmi@gmail.com</span>
+                        </div>
+                    </a>
+                    <a class="block font-normal" href="">
+                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                            <i data-lucide="phone"></i>
+                            <span>0839-2394-2310</span>
+                        </div>
+                    </a>
+                    <div class="flex gap-2 mt-3 sosmed">
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="facebook"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line bg-primary mt-2 h-0.5 rounded opacity-50"></div>
+        <div class="mt-1 font-semibold text-center copyright sm:text-xs">
+            Laksmi Team ©2023
+        </div>
+    </footer>
+    <script src="../src/scripts/script.js"></script>
+</body>
+
+</html>
