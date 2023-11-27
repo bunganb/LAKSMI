@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAKSMI</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body class="bg-light">
+<!-- SECTION HEADER -->
+<header class="relative font-semibold text-[17px] font-dmSans px-6 py-4 lg:py-6 md:px-14 lg:px-20 flex justify-between items-center bg-light text-dark ">
+	<img class="h-10 md:h-14 lg:h-12" src="../src/assets/logo.svg" alt="Logo">
+	<button class="lg:hidden navbar-burger flex items-center p-2 border-2 border-primary rounded-md">
+		<svg class="block h-3 w-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+	</button>
+	<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+		<li><a class="px-3 hover:text-primary" href="#">Beranda</a></li>
+		<li><a class="px-3 hover:text-primary" href="#">Aktivitas</a></li>
+		<li><a class="px-3 hover:text-primary" href="#">Artikel</a></li>
+		<li><a class="px-3 hover:text-primary" href="#">Tentang kami</a></li>
+		<li><a class="px-3 hover:text-primary" href="#">Kontak</a></li>
+	</ul>
+	<div class="hidden text-base lg:inline-block">
+		<a class="transition-all ease-in-out duration-300 py-1.5 px-4 lg:ml-auto lg:mr-3 bg-primary hover:bg-teal-600 hover:border-teal-600 border-2 border-primary text-light rounded-md" href="regist.html">Daftar</a>
+		<a class="transition-all ease-in-out duration-300 py-1.5 px-4 bg-light hover:border-teal-600 border-[3px] border-primary hover:text-primary rounded-md" href="login.html">Masuk</a>
+	</div>
+</header>
+<div class="navbar-menu relative z-50 hidden">
+	<header class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+		<div class="flex items-center mb-8">
+			<a class="mr-auto text-3xl font-bold leading-none" href="#">
+				<img class="h-10 lg:h-12" src="../src/assets/logo.svg" alt="Logo">
+			</a>
+			<button class="navbar-close">
+				<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<div>
+			<ul class="space-y-1 font-semibold text-gray-600">
+				<li><a class="block p-4 text-sm hover:text-primary hover:bg-teal-50 rounded" href="index.html">Beranda</a></li>
+				<li><a class="block p-4 text-sm hover:text-primary hover:bg-teal-50 rounded" href="#">Aktivitas</a></li>
+				<li><a class="block p-4 text-sm hover:text-primary hover:bg-teal-50 rounded" href="artikel.html">Artikel</a></li>
+				<li><a class="block p-4 text-sm hover:text-primary hover:bg-teal-50 rounded" href="#footer">Tentang Kami</a></li>
+				<li><a class="block p-4 text-sm hover:text-primary hover:bg-teal-50 rounded" href="#footer">Kontak</a></li>
+			</ul>
+		</div>
+		<div class="mt-auto">
+			<div class="pt-6">
+				<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Daftar</a>
+				<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-primary hover:bg-teal-600  rounded-xl" href="#">Masuk</a>
+			</div>
+			<p class="my-4 text-xs text-center text-gray-400">
+				<span>Laksmi Team © 2023</span>
+			</p>
+		</div>
+	</header>
+</div> <!-- END HEADER -->
+
+<!-- SECTION CATEGORY -->
+<section class="text-sm lg:text-base mx-6 my-3 md:mx-14 lg:mx-20 flex md:justify-between items-center border-[1px] rounded-lg">
+    <ul class="hidden md:flex text-gray-600">
+        <li class="py-3 pl-5 pr-3 hover:bg-slate-100">Semua</li>
+        <li class="py-3 px-3 hover:bg-slate-100">Edukasi</li>
+        <li class="py-3 px-3 hover:bg-slate-100">Volunteer</li>
+        <li class="py-3 px-3 hover:bg-slate-100">Terbaru</li>
+        <li class="py-3 px-3 hover:bg-slate-100">Trending</li>
+    </ul>
+    <div class="w-[25%] text-dark flex items-center justify-between border-l-[1px] py-2">
+        <!-- <p class="pl-3">Cari...</p> -->
+        <input clas="focus:outline-none py-2 px-3 w-[90%]" type="text" placeholder="Cari...">
+        <i class="pr-3 h-5 text-gray-600" data-lucide="search"></i>
+    </div>
+</section>
+<!-- END CATEGORY -->
+
+<!-- SECTION LATEST NEWS -->
+<section class="flex flex-col md:flex-row lg:grid grid-cols-3 mt-8 mx-6 md:mx-14 lg:mx-20">
+    <div class="grid w-fit lg:col-span-2"><!-- main news -->
+        <img class="object-fit rounded-md md:w-[50%] lg:w-fit h-[140%] md:h-[22rem] lg:h-fit object-cover ml-0 lg:right-[38%] md:absolute" src="../src/assets/umbrella.png" alt="">
+        <div class="flex flex-col items-center md:items-start mx-5 md:ml-2 lg:ml-0 -mt-28 mb-12 md:my-4 z-10 font-dmSans text-gray-600 py-6 lg:py-8 md:px-7 lg:pl-10 rounded-md bg-slate-50 h-fit md:max-w-[65%] lg:max-w-[40%]">
+            <a href="#" class="text-sm lg:text-[17px] flex items-center gap-2"><span class="before:block before:bg-primary before:h-[3px] before:w-[25px]"></span>Edukasi</a>
+            <a class="text-center md:text-start my-2.5 md:mb-0 md:mt-3.5 text-gray-700 font-kufam font-semibold text-sm md:text-lg lg:text-2xl" href="detail-artikel.html">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</a>
+            <p class="hidden md:block text-sm lg:text-base mb-3.5 mt-1">Badan Meteorologi Klimatologi dan Geofisika (BMKG) baru-baru ini mengindikasi cuaca panas yang tidak biasa di wilayah Asia Tenggara, termasuk Indonesia.</p>
+            <a class="text-xs md:text-sm lg:text-base rounded-md w-fit text-dark bg-blue-100 px-4 pt-2 pb-2.5" href="#">Selengkapnya</a>
+        </div>
+    </div>
+
+    <div class="font-kufam">
+        <h1 class="px-3.5 py-1.5 border-l-[6px] border-l-primary lg:text-[21px] font-semibold text-dark">Artikel terbaru</h1>
+        <div class="p-3 mt-1.5 border-b-2 border-gray-200">
+            <a href="#" class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Edukasi</a>
+            <p class="pb-2 pt-1.5 font-medium text-sm lg:text-lg text-gray-800">Menanam 2500 pohon mangrove di pantai pulau santen</p>
+        </div>
+        <div class="p-3 border-b-2 border-gray-200">
+            <a href="#" class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Edukasi</a>
+            <p class="pb-2 pt-1.5 font-medium text-sm lg:text-lg text-gray-800">Menanam 2500 pohon mangrove di pantai pulau santen</p>
+        </div>
+        <div class="p-3 border-b-2 border-gray-200">
+            <a href="#" class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Edukasi</a>
+            <p class="pb-2 pt-1.5 font-medium text-sm lg:text-lg text-gray-800">Menanam 2500 pohon mangrove di pantai pulau santen</p>
+        </div>
+    </div>
+</section>
+<!-- END LATEST -->
+
+<!-- POPULER & RECOMMEND -->
+<section class="grid lg:grid-cols-3 my-12 mx-6 md:mx-14 lg:mx-20">
+    <!-- populer -->
+    <div class="grid col-span-2">
+        <h1 class="px-3.5 py-1.5 border-l-[6px] border-l-primary lg:text-[21px] font-semibold text-dark font-kufam">Artikel populer</h1>
+
+        <div class="grid md:grid-cols-2 md:gap-4">
+            <div class="my-2 lg:my-4 lg:ml-4 max-w-sm rounded overflow-hidden">
+                <img class="w-full" src="../src/assets/vol-1.png" alt="Sunset in the mountains">
+                <div class="bg-blue-50 px-6 lg:px-7 py-4 z-10 -mt-6 relative rounded-t-2xl">
+                    <h1 class="font-semibold lg:text-xl mb-2 font-kufam text-gray-800">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h1>
+                    <p class="hidden md:block text-gray-700 text-base">Badan Meteorologi Klimatologi dan Geofisika baru-baru ini mengindikasikan cuaca panas yang tidak biasa di wilayah Asia Tenggara [..]</p>
+                    <div class="mt-2 mb-1 md:my-3 flex justify-between items-center">
+                        <p class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Edukasi</p>
+                        <i data-lucide="chevron-right" class="rounded-full p-2 bg-opacity-10 bg-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 lg:my-4 max-w-sm rounded overflow-hidden">
+                <img class="w-full" src="../src/assets/vol-2.png" alt="Sunset in the mountains">
+                <div class="bg-blue-50 px-6 lg:px-7 py-4 z-10 -mt-6 relative rounded-t-2xl">
+                    <h1 class="font-semibold lg:text-xl mb-2 font-kufam text-gray-800">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h1>
+                    <p class="hidden md:block text-gray-700 text-base">Badan Meteorologi Klimatologi dan Geofisika baru-baru ini mengindikasikan cuaca panas yang tidak biasa di wilayah Asia Tenggara [..]</p>
+                    <div class="mt-2 mb-1 md:my-3 flex justify-between items-center">
+                        <p class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Volunteer</p>
+                        <i data-lucide="chevron-right" class="rounded-full p-2 bg-opacity-10 bg-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 lg:my-4 lg:ml-4 max-w-sm rounded overflow-hidden">
+                <img class="w-full" src="../src/assets/vol-2.png" alt="Sunset in the mountains">
+                <div class="bg-blue-50 px-6 lg:px-7 py-4 z-10 -mt-6 relative rounded-t-2xl">
+                    <h1 class="font-semibold lg:text-xl mb-2 font-kufam text-gray-800">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h1>
+                    <p class="hidden md:block text-gray-700 text-base">Badan Meteorologi Klimatologi dan Geofisika baru-baru ini mengindikasikan cuaca panas yang tidak biasa di wilayah Asia Tenggara [..]</p>
+                    <div class="mt-2 mb-1 md:my-3 flex justify-between items-center">
+                        <p class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Edukasi</p>
+                        <i data-lucide="chevron-right" class="rounded-full p-2 bg-opacity-10 bg-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 lg:my-4 max-w-sm rounded overflow-hidden">
+                <img class="w-full" src="../src/assets/vol-1.png" alt="Sunset in the mountains">
+                <div class="bg-blue-50 px-6 lg:px-7 py-4 z-10 -mt-6 relative rounded-t-2xl">
+                    <h1 class="font-semibold lg:text-xl mb-2 font-kufam text-gray-800">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h1>
+                    <p class="hidden md:block text-gray-700 text-base">Badan Meteorologi Klimatologi dan Geofisika baru-baru ini mengindikasikan cuaca panas yang tidak biasa di wilayah Asia Tenggara [..]</p>
+                    <div class="mt-2 mb-1 md:my-3 flex justify-between items-center">
+                        <p class="text-sm lg:text-[17px] text-gray-600 font-dmSans flex items-center gap-2"><span class="before:block before:bg-primary before:h-[2.5px] before:w-[22px]"></span>Volunteer</p>
+                        <i data-lucide="chevron-right" class="rounded-full p-2 bg-opacity-10 bg-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- recommendation -->
+    <div>
+        <h1 class="px-3.5 py-1.5 border-l-[6px] border-l-primary lg:text-[21px] font-semibold text-dark font-kufam">Rekomendasi</h1>
+
+        <div class="flex flex-col gap-5">
+            <div class="mt-5 flex gap-4 drop-shadow-md bg-light">
+                <img src="../src/assets/woman.png" alt="">
+                <div class="flex flex-col font-dmSans">
+                    <a class="py-1 px-3 w-fit bg-opacity-20 bg-primary text-primary" href="#">Edukasi</a>
+                    <h2 class="font-semibold font-kufam">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h2>
+                    <p class="text-gray-600">Cuaca yang terlalu panas dapat membawa dampak serius bagi kesehatan...</p>
+                    <a href="#" class="text-primary">Selengkapnya<i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="flex gap-4 drop-shadow-md bg-light">
+                <img src="../src/assets/woman.png" alt="">
+                <div class="flex flex-col font-dmSans">
+                    <a class="py-1 px-3 w-fit bg-opacity-20 bg-primary text-primary" href="#">Edukasi</a>
+                    <h2 class="font-semibold font-kufam">Berikut Tips Menghadapi Cuaca Panas Tak Biasa</h2>
+                    <p class="text-gray-600">Cuaca yang terlalu panas dapat membawa dampak serius bagi kesehatan...</p>
+                    <a href="#" class="text-primary">Selengkapnya<i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END SECTION -->
+
+<!-- SECTION FOOTER -->
+<footer id="footer" class="px-8 py-6 my-8 rounded-md font-dmSans text-dark bg-opacity-10 bg-primary md:mx-20 mx-14">
+        <div class="links md:flex">
+            <div class="lg:w-1/4 address">
+                <img src="../src/img/logo.svg" alt="" class="w-32 lg:w-52">
+                <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
+                <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
+                    Timur</p>
+            </div>
+            <div class="lg:w-1/4 info">
+                <h2 class="text-sm font-semibold lg:text-lg ">Info</h2>
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Tentang Kami</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Keadaan daerahmu</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Mitra</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Daftar</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold lg:w-1/4 services">
+                <h2 class="text-sm lg:text-lg">Layanan</h2>
+                <div class="w-1/2 h-0.5 line opacity-50 bg-primary rounded"></div>
+                <div class="item-links ">
+                    <a href="#" class="block text-xs font-normal leading-6 hover:underline lg:text-base">Artikel</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Bank Sampah</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Kegiatan Relawan</a>
+                </div>
+            </div>
+            
+            <div class="text-lg font-semibold lg:w-1/4 contact" id="contact">
+                <h2 class="text-sm lg:text-lg">Hubungi</h2>
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="" class="block my-2 font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
+                            <i data-lucide="mail"></i>
+                            <span class="underline">timlaksmi@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="" class="block font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
+                            <i data-lucide="phone"></i>
+                            <span>0839-2394-2310</span>
+                        </div>
+                    </a>
+                    <div class="flex gap-2 mt-3 sosmed">
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="facebook"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
+                                <i data-lucide="youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-0.5  mt-2 line bg-primary opacity-50 rounded"></div>
+        <div class="mt-1 font-semibold text-center sm:text-xs copyright">
+            Laksmi Team ©2023
+        </div>
+    </footer> <!-- END FOOTER -->
+
+    <script src="../src/scripts/script.js"></script>
+    <script> lucide.createIcons(); </script>
+  </body>
+</html>
