@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tentang Kami</title>
+    <link href="../src/img/logo1.svg" rel="icon" type="image/x-icon" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="bg-light">
+    <nav class="relative flex items-center justify-between px-6 pt-4 md:px-15 bg-light lg:px-20">
+        <a href="">
+            <img alt="Logo" class="w-4/5 cursor-pointer md:w-full" src="../src/img/logo.svg">
+        </a>
+        <button class="flex items-center p-2 border-2 rounded-md navbar-burger text-dark border-primary lg:hidden">
+            <svg class="block w-3 h-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </button>
+        <ul
+            class="absolute hidden font-semibold transform -translate-x-1/2 -translate-y-1/2 font-dmSans left-1/2 top-1/2 lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Beranda</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Aktivitas</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Artikel</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#about-us">Tentang kami</a></li>
+            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#contact">Kontak</a></li>
+        </ul>
+        <a class="bg-primary border-primary text-light hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 hover:bg-teal-600 lg:ml-auto lg:mr-3 lg:inline-block"
+            href="#">Daftar</a>
+        <a class="bg-light border-primary hover:text-primary text-dark hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 lg:inline-block"
+            href="#">Masuk</a>
+    </nav>
+    <div class="relative z-50 hidden navbar-menu">
+        <nav
+            class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none cursor-pointer" href="#">
+                    <img alt="Logo" class="h-10 lg:h-12" src="../src/img/logo.svg">
+                </a>
+                <button class="navbar-close">
+                    <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold rounded text-dark hover:text-primary hover:bg-teal-50"
+                            href="#">Beranda</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Aktivitas</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Artikel</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#about-us">Tentang Kami</a></li>
+                    <li class="mb-1"><a
+                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
+                            href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center rounded-xl bg-gray-50 hover:bg-gray-100"
+                        href="regist.html">Daftar</a>
+                    <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary rounded-xl hover:bg-teal-600"
+                        href="login.html">Masuk</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Laksmi Team © 2023</span>
+                </p>
+            </div>
+        </nav>
+    </div>
+    <!-- hero -->
+    <header class="mx-12 my-7 lg:mx-20">
+        <div class="items-center w-full h-full md:flex">
+            <div class="content-left md:w-1/2">
+                <h4 class="text-sm font-semibold font-kufam text-dark lg:text-xl">Tentang <span
+                        class="text-primary">Kami</span></h4>
+                <h1 class="font-kufam text-dark my-3 text-2xl font-semibold leading-tight lg:text-[4rem]">Bersama Kami,
+                    Lindungi Bumi</h1>
+                <p class="font-dmSans my-3 text-sm font-medium text-[#7E7E7E] lg:text-lg">Laksmi adalah sebuah
+                    komunitas yang
+                    didirikan oleh
+                    sekelompok pemuda
+                    yang memiliki visi bersama untuk
+                    menjaga dan memperbaiki keadaan lingkungan.</p>
+                <h6 class="mb-3 font-semibold text-dark font-kufam">Kenapa sih kita harus melindungi bumi ?</h6>
+                <div class="md:flex md:flex-wrap">
+                    <div class="flex items-center gap-2 mb-4 point-1 md:w-1/2">
+                        <div class="p-3 rounded-full dot bg-primary"></div>
+                        <p class="font-medium text-dark font-dmSans">Keseimbangan Ekosistem</p>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4 point-1 md:w-1/2">
+                        <div class="p-3 rounded-full dot bg-primary"></div>
+                        <p class="font-medium text-dark font-dmSans">Mengurangi dampak perubahan iklim</p>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4 point-1 md:w-1/2">
+                        <div class="p-3 rounded-full dot bg-primary"></div>
+                        <p class="font-medium text-dark font-dmSans">Mencipkatan Lingkungan hidup yang bersih</p>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4 point-1 md:w-1/2">
+                        <div class="p-3 rounded-full dot bg-primary"></div>
+                        <p class="font-medium text-dark font-dmSans">Pencegahan Bencana Alam</p>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4 point-1 md:w-1/2">
+                        <div class="p-3 rounded-full dot bg-primary"></div>
+                        <p class="font-medium text-dark font-dmSans">Kesinambungan Sistem Ekologi</p>
+                    </div>
+                </div>
+                <p class="font-dmSans my-3 text-sm font-medium text-[#7E7E7E] lg:text-lg">Melindungi Bumi adalah
+                    keharusan kritis karena keseimbangan ekosistemnya mempengaruhi kehidupan semua makhluk.</p>
+            </div>
+            <div class="hidden content-right md:flex md:w-1/2 md:justify-center">
+                <img alt="" class="w-4/6" src="../src/img/about-us-hero.svg">
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <main>
+        <div class="flex justify-center px-10 py-16 text-center bg-cover text-light banner"
+            style="background-image: linear-gradient(rgba(30, 30, 30, 0.60),rgba(30, 30, 30, 0.60)),url('../src/img/plant2.jpg');">
+            <h1 class="text-xl text hero-quote font-kufam sm:font-semibold lg:w-4/6 lg:text-5xl"
+                style="line-height: 1.3;">
+                Komunitas Kami tersebar di seluruh kota di
+                <div class="relative items-end inline-block lg:inline-flex">
+                    <div
+                        class="absolute left-0 right-0 h-4 transform -skew-x-12 bg-secondary -bottom-1 md:h-5 lg:bottom-2 lg:h-6 xl:h-8">
+                    </div>
+                    <span class="relative z-10">Indonesia</span>
+                </div>
+            </h1>
+        </div>
+        <div class="mx-10 my-7 lg:mx-20 dokumentasi">
+            <h1 class="text-xl font-bold text-center font-kufam mb-7 lg:text-2xl">Dokumentasi <span
+                    class="text-primary">Kegiatan</span>
+            </h1>
+            <div class="flex flex-wrap justify-center">
+                <div class="self-start w-full p-3 md:w-1/2 lg:w-1/4 picture-item">
+                    <div class="flex justify-center">
+                        <div class="relative block overflow-hidden group">
+                            <img src="../src/img/susur.jpg" class="object-cover md:h-[25rem] h-80" alt="work-image" />
+                            <a href="#"
+                                class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
+                                <div>
+                                    <h6 class="text-base font-medium text-black">Susur Pantai</h6>
+                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
+                                        dengan masyarakat sekitar guna tingkatkan kesadaran masyarakat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start w-full p-3 md:w-1/2 lg:w-1/4 picture-item">
+                    <div class="flex justify-center">
+                        <div class="relative block overflow-hidden group">
+                            <img src="../src/img/beach.jpg" class="object-cover md:h-[25rem] h-80" alt="work-image" />
+                            <a href="#"
+                                class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
+                                <div>
+                                    <h6 class="text-base font-medium text-black">Susur Pantai</h6>
+                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
+                                        dengan masyarakat sekitar guna tingkatkan kesadaran masyarakat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start w-full p-3 md:w-1/2 lg:w-1/4 picture-item">
+                    <div class="flex justify-center">
+                        <div class="relative block overflow-hidden group">
+                            <img src="../src/img/plant2.jpg" class="object-cover md:h-[25rem] h-80" alt="work-image" />
+                            <a href="#"
+                                class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
+                                <div>
+                                    <h6 class="text-base font-medium text-black">Kegiatan Reboisasi</h6>
+                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan reboisasi merupakan upaya untuk
+                                        menanam kembali pohon-pohon atau tumbuhan yang telah ditebang atau hilang dari
+                                        suatu area. </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start w-full p-3 md:w-1/2 lg:w-1/4 picture-item">
+                    <div class="flex justify-center">
+                        <div class="relative block overflow-hidden group">
+                            <img src="../src/img/volunteer10.jpg" class="object-cover md:h-[25rem] h-80"
+                                alt="work-image" />
+                            <a href="#"
+                                class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
+                                <div>
+                                    <h6 class="text-base font-medium text-black">Kegiatan Relawan</h6>
+                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan reboisasi merupakan upaya untuk
+                                        menanam kembali pohon-pohon atau tumbuhan yang telah ditebang atau hilang dari
+                                        suatu area. </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="self-end w-full p-3 md:w-1/2 lg:w-1/4 picture-item ">
+                <div class="relative block overflow-hidden rounded group">
+                    <img src="../src/img/volunteer9.jpg" class="rounded " alt="work-image" />
+                    <a href="#"
+                        class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+                        <div>
+                            <p class="text-sm text-gray-400">Kegiatan relawan</p>
+                            <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <div class="mx-10 contact-us my-7 lg:mx-20">
+            <h1 class="relative text-xl font-bold lg:text-2xl title font-kufam">
+                Pangkalan
+                <span class="relative inline-block">
+                    <span class="relative z-20">Kami</span>
+                    <span class="absolute left-0 right-0 h-2 transform -skew-x-12 bottom-1 lg:h-3 bg-secondary"></span>
+                </span>
+            </h1>
+            <p class="font-dmSans my-3 text-sm font-medium text-[#7E7E7E] lg:text-lg">Alamat Pangkalan yang tersebar di
+                Indonesia!</p>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+                <div class="w-full h-full rounded boxes bg-primary">1</div>
+            </div>
+        </div>
+        <div class="our-team"></div>
+    </main>
+    <!-- footer -->
+    <footer class="px-8 py-6 mx-8 rounded-md font-dmSans text-dark bg-primary bg-opacity-10 my-7 lg:mx-20">
+        <div class="links md:flex">
+            <div class="address lg:w-1/4">
+                <img alt="" class="w-32 lg:w-52" src="../src/img/logo.svg">
+                <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
+                <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
+                    Timur</p>
+            </div>
+            <div class="info lg:w-1/4">
+                <h2 class="text-sm font-semibold lg:text-lg">Info</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Tentang Kami</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Keadaan daerahmu</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Mitra</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Daftar</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold services lg:w-1/4">
+                <h2 class="text-sm lg:text-lg">Layanan</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block text-xs font-normal leading-6 hover:underline lg:text-base" href="#">Artikel</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Bank Sampah</a>
+                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Kegiatan Relawan</a>
+                </div>
+            </div>
+            <div class="text-lg font-semibold contact lg:w-1/4" id="contact">
+                <h2 class="text-sm lg:text-lg">Hubungi</h2>
+                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
+                <div class="item-links">
+                    <a class="block my-2 font-normal" href="">
+                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                            <i data-lucide="mail"></i>
+                            <span class="underline">timlaksmi@gmail.com</span>
+                        </div>
+                    </a>
+                    <a class="block font-normal" href="">
+                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                            <i data-lucide="phone"></i>
+                            <span>0839-2394-2310</span>
+                        </div>
+                    </a>
+                    <div class="flex gap-2 mt-3 sosmed">
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="facebook"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div
+                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                <i data-lucide="youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line bg-primary mt-2 h-0.5 rounded opacity-50"></div>
+        <div class="mt-1 font-semibold text-center copyright sm:text-xs">
+            Laksmi Team ©2023
+        </div>
+    </footer>
+    <script src="../src/scripts/script.js"></script>
+</body>
+
+</html>
