@@ -8,81 +8,82 @@
     <link href="../src/img/logo1.svg" rel="icon" type="image/x-icon" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
 </head>
 
 <body class="bg-light">
-    <nav class="relative flex items-center justify-between px-6 pt-4 md:px-15 bg-light lg:px-20">
-        <a href="">
-            <img alt="Logo" class="w-4/5 cursor-pointer md:w-full" src="../src/img/logo.svg">
-        </a>
-        <button class="flex items-center p-2 border-2 rounded-md navbar-burger text-dark border-primary lg:hidden">
+    <nav
+        class="fixed top-0 z-50 flex items-center justify-between w-full px-6 py-4 text-base font-semibold text-gray-600 lg:py-6 md:px-14 lg:px-20 bg-light ">
+        <a href="index.html"><img class="h-10 md:h-14 lg:h-12" src="../src/img/logo-fix.svg" alt="Logo"></a>
+        <button class="flex items-center p-2 border-2 rounded-md lg:hidden navbar-burger border-primary">
             <svg class="block w-3 h-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
         </button>
         <ul
-            class="absolute hidden font-semibold transform -translate-x-1/2 -translate-y-1/2 font-dmSans left-1/2 top-1/2 lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
-            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Beranda</a></li>
-            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Aktivitas</a></li>
-            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Artikel</a></li>
-            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#about-us">Tentang kami</a></li>
-            <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#contact">Kontak</a></li>
+            class="absolute hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="px-3 hover:text-primary" href="index.html">Beranda</a></li>
+            <li><a class="px-3 hover:text-primary" href="event.html">Aktivitas</a></li>
+            <li><a class="px-3 hover:text-primary" href="artikel.html">Artikel</a></li>
+            <li><a class="px-3 hover:text-primary" href="tentang-kami.html">Tentang kami</a></li>
+            <li><a class="px-3 hover:text-primary" href="tentang-kami.html/#kontak">Kontak</a></li>
         </ul>
-        <a class="bg-primary border-primary text-light hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 hover:bg-teal-600 lg:ml-auto lg:mr-3 lg:inline-block"
-            href="#">Daftar</a>
-        <a class="bg-light border-primary hover:text-primary text-dark hidden rounded-md border-2 px-4 py-1.5 text-sm font-normal transition duration-200 hover:border-teal-600 lg:inline-block"
-            href="#">Masuk</a>
+        <div class="hidden text-base lg:inline-block">
+            <a class="transition-all ease-in-out duration-300 py-1.5 px-4 lg:ml-auto lg:mr-3 bg-primary hover:bg-teal-600 hover:border-teal-600 border-2 border-primary text-light rounded-md"
+                href="regist.html">Daftar</a>
+            <a class="transition-all ease-in-out duration-300 py-1.5 px-4 bg-light hover:border-teal-600 border-[3px] border-primary hover:text-primary rounded-md"
+                href="login.html">Masuk</a>
+        </div>
     </nav>
-    <div class="relative z-50 hidden navbar-menu">
-        <nav
-            class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
-            <div class="flex items-center mb-8">
-                <a class="mr-auto text-3xl font-bold leading-none cursor-pointer" href="#">
-                    <img alt="Logo" class="h-10 lg:h-12" src="../src/img/logo.svg">
+    <div class="relative hidden mt-12 navbar-menu">
+        <nav class="bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto border-r bg-light">
+            <div class="flex items-center mb-8 justify-self-end">
+                <a class="hidden mr-auto text-3xl font-bold leading-none" href="index.html">
+                    <img class="h-10 lg:h-12" src="../src/img/logo-fix.svg" alt="Logo">
                 </a>
-                <button class="navbar-close">
-                    <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <button class="ml-4 navbar-close">
+                    <svg class="w-6 h-6 cursor-pointer text-primary hover:text-secondary"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                         </path>
                     </svg>
                 </button>
             </div>
             <div>
-                <ul>
-                    <li class="mb-1"><a
-                            class="block p-4 text-sm font-semibold rounded text-dark hover:text-primary hover:bg-teal-50"
-                            href="#">Beranda</a></li>
-                    <li class="mb-1"><a
-                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-                            href="#">Aktivitas</a></li>
-                    <li class="mb-1"><a
-                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-                            href="#">Artikel</a></li>
-                    <li class="mb-1"><a
-                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-                            href="#about-us">Tentang Kami</a></li>
-                    <li class="mb-1"><a
-                            class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-                            href="#">Kontak</a></li>
+                <ul class="space-y-1 font-semibold text-gray-600">
+                    <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+                            href="index.html">Beranda</a>
+                    </li>
+                    <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+                            href="event.html">Aktivitas</a>
+                    </li>
+                    <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+                            href="artikel.html">Artikel</a>
+                    </li>
+                    <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+                            href="tentang-kami.html">Tentang
+                            Kami</a></li>
+                    <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+                            href="tentang-kami.html/#kontak">Kontak</a></li>
                 </ul>
             </div>
             <div class="mt-auto">
                 <div class="pt-6">
-                    <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center rounded-xl bg-gray-50 hover:bg-gray-100"
-                        href="regist.html">Daftar</a>
-                    <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary rounded-xl hover:bg-teal-600"
-                        href="login.html">Masuk</a>
+                    <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center bg-gray-50 hover:bg-gray-100 rounded-xl"
+                        href="#">Daftar</a>
+                    <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary hover:bg-teal-600 rounded-xl"
+                        href="#">Masuk</a>
                 </div>
                 <p class="my-4 text-xs text-center text-gray-400">
                     <span>Laksmi Team © 2023</span>
                 </p>
             </div>
         </nav>
-    </div>
+    </div> <!-- END HEADER -->
     <!-- hero -->
-    <header class="mx-12 my-7 lg:mx-20">
+    <header class="mx-12 my-7  mt-20 md:mt-[6.5rem] lg:mx-20">
         <div class="items-center w-full h-full md:flex">
             <div class="content-left md:w-1/2">
                 <h4 class="text-sm font-semibold font-kufam text-dark lg:text-xl">Tentang <span
@@ -153,8 +154,8 @@
                             <a href="#"
                                 class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
                                 <div>
-                                    <h6 class="text-base font-medium text-black">Susur Pantai</h6>
-                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
+                                    <h6 class="text-base font-semibold text-dark ">Susur Pantai</h6>
+                                    <p class="text-xs text-dark md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
                                         dengan masyarakat sekitar guna tingkatkan kesadaran masyarakat</p>
                                 </div>
                             </a>
@@ -168,8 +169,8 @@
                             <a href="#"
                                 class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
                                 <div>
-                                    <h6 class="text-base font-medium text-black">Susur Pantai</h6>
-                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
+                                    <h6 class="text-base font-semibold text-dark">Susur Pantai</h6>
+                                    <p class="text-xs text-dark md:text-sm">Kegiatan Sisir pantai daerah Banyuwangi
                                         dengan masyarakat sekitar guna tingkatkan kesadaran masyarakat</p>
                                 </div>
                             </a>
@@ -183,8 +184,8 @@
                             <a href="#"
                                 class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
                                 <div>
-                                    <h6 class="text-base font-medium text-black">Kegiatan Reboisasi</h6>
-                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan reboisasi merupakan upaya untuk
+                                    <h6 class="text-base font-semibold text-dark">Kegiatan Reboisasi</h6>
+                                    <p class="text-xs text-dark md:text-sm">Kegiatan reboisasi merupakan upaya untuk
                                         menanam kembali pohon-pohon atau tumbuhan yang telah ditebang atau hilang dari
                                         suatu area. </p>
                                 </div>
@@ -200,8 +201,8 @@
                             <a href="#"
                                 class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded cursor-pointer lg:opacity-0 h-fit lg:group-hover:opacity-80">
                                 <div>
-                                    <h6 class="text-base font-medium text-black">Kegiatan Relawan</h6>
-                                    <p class="text-xs text-gray-400 md:text-sm">Kegiatan reboisasi merupakan upaya untuk
+                                    <h6 class="text-basefont-semibold text-dark">Kegiatan Relawan</h6>
+                                    <p class="text-xs text-dark md:text-sm">Kegiatan reboisasi merupakan upaya untuk
                                         menanam kembali pohon-pohon atau tumbuhan yang telah ditebang atau hilang dari
                                         suatu area. </p>
                                 </div>
@@ -209,23 +210,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-            <!-- <div class="self-end w-full p-3 md:w-1/2 lg:w-1/4 picture-item ">
-                <div class="relative block overflow-hidden rounded group">
-                    <img src="../src/img/volunteer9.jpg" class="rounded " alt="work-image" />
-                    <a href="#"
-                        class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
-                        <div>
-                            <p class="text-sm text-gray-400">Kegiatan relawan</p>
-                            <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
         </div>
-        <div class="mx-10 contact-us my-7 lg:mx-20">
+        <div class="mx-10 contact-us my-7 lg:mx-20" id="kontak">
             <h1 class="relative text-xl font-bold lg:text-2xl title font-kufam">
                 Pangkalan
                 <span class="relative inline-block">
@@ -236,56 +223,333 @@
             <p class="font-dmSans my-3 text-sm font-medium text-[#7E7E7E] lg:text-lg">Alamat Pangkalan yang tersebar di
                 Indonesia!</p>
             <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
-                <div class="w-full h-full rounded boxes bg-primary">1</div>
+
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">Banyuwangi</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl. Ikan Puas nomor 60 Karanganyar
+                        Kode pos 68907</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmibwi@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0894-4934-4984
+                    </h6>
+                </div>
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">Jakarta</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl.KH Agus Salim nomor 10 Sabang
+                        Kode pos 98347</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmijkt@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0894-4934-0933
+                    </h6>
+                </div>
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">IKN</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl. Nusantara nomor 31 Nusantara
+                        Kode pos 98302</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmiikn@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0853-2093-3989
+                    </h6>
+                </div>
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">Bandung</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl. A.H Nasution nomor 20 Antapani
+                        Kode pos 98753</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmibandung@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0894-4387-4984
+                    </h6>
+                </div>
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">Maluku</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl. A.H Nasution nomor 20 Antapani
+                        Kode pos 98753</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmimaluku@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0898-3298-1298
+                    </h6>
+                </div>
+                <div class="w-full h-full rounded leading-8 boxes bg-[#F0F0F0] py-6 px-4">
+                    <h1 class="text-lg md:text-xl font-kufam text-bold text-dark lg:text-2xl">Banjarmasin</h1>
+                    <p class="text-sm font-medium font-dmSans text-dark">Jl. Ikan Puas nomor 60 Karanganyar
+                        Kode pos 68907</p>
+                    <h6 class="text-lg font-semibold font-dmSans text-dark">Hubungi : </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="mail"></i>
+                        laksmibanjar@gmail.com
+                    </h6>
+                    <h6 class="flex items-center gap-1 font-medium underline">
+                        <i data-lucide="phone-call"></i>
+                        0894-4934-4984
+                    </h6>
+                </div>
+            </div>
+            <div class="flex justify-center mt-7">
+                <button class="px-8 py-2 font-semibold text-center rounded-md bg-primary text-light">Lebih
+                    Banyak</button>
             </div>
         </div>
-        <div class="our-team"></div>
+        <div class=" our-team">
+            <h1 class="text-xl text-center text-dark lg:text-2xl font-kufam">Tim <span class="text-primary">Kami</span>
+            </h1>
+            <div>
+                <div class="splide" id="slider-team">
+                    <div class="splide__arrows">
+                        <button class=" bg-primary splide__arrow splide__arrow--prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                            </svg>
+                        </button>
+                        <button class=" bg-primary splide__arrow splide__arrow--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track py-7">
+                        <ul class="splide__list">
+                            <li class="w-full px-4 splide__slide lg:max-w-lg">
+                                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                                    <div class="flex flex-col items-center justify-center py-6 content">
+                                        <div class="relative mx-auto rounded-full img-profile">
+                                            <img src="../src/img/bg-profile.svg" alt="" class="">
+                                            <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                                                <img src="../src/img/profile3.jpg"
+                                                    class="object-cover rounded-full aspect-square w-80 md:w-48">
+                                            </div>
+                                        </div>
+                                        <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Mega</h1>
+                                        <h5 class="font-medium font-dmSans text-primary">Co-Founder</h5>
+                                        <div
+                                            class="absolute bottom-0 flex items-center justify-center gap-3 px-3 py-2 w-fit text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="instagram"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="youtube"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="w-full px-4 splide__slide lg:max-w-lg">
+                                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                                    <div class="flex flex-col items-center justify-center py-6 content">
+                                        <div class="relative mx-auto rounded-full img-profile">
+                                            <img src="../src/img/bg-profile.svg" alt="" class="">
+                                            <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                                                <img src="../src/img/profile.jpg"
+                                                    class="object-cover rounded-full aspect-square w-80 md:w-48">
+                                            </div>
+                                        </div>
+                                        <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mas Ali</h1>
+                                        <h5 class="font-medium font-dmSans text-primary">Founder</h5>
+                                        <div
+                                            class="absolute bottom-0 flex items-center justify-center gap-3 px-3 py-2 w-fit text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="instagram"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="youtube"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="w-full px-4 splide__slide lg:max-w-lg">
+                                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                                    <div class="flex flex-col items-center justify-center py-6 content">
+                                        <div class="relative mx-auto rounded-full img-profile">
+                                            <img src="../src/img/bg-profile.svg" alt="" class="">
+                                            <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                                                <img src="../src/img/profile4.jpg"
+                                                    class="object-cover rounded-full aspect-square w-80 md:w-48">
+                                            </div>
+                                        </div>
+                                        <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Siti</h1>
+                                        <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                                        <div
+                                            class="absolute bottom-0 flex items-center justify-center gap-3 px-3 py-2 w-fit text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="instagram"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="youtube"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="w-full px-4 splide__slide lg:max-w-lg">
+                                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                                    <div class="flex flex-col items-center justify-center py-6 content">
+                                        <div class="relative mx-auto rounded-full img-profile">
+                                            <img src="../src/img/bg-profile.svg" alt="" class="">
+                                            <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                                                <img src="../src/img/profile6.png"
+                                                    class="object-cover rounded-full aspect-square w-80 md:w-48">
+                                            </div>
+                                        </div>
+                                        <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mbak Sinta</h1>
+                                        <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                                        <div
+                                            class="absolute bottom-0 flex items-center justify-center gap-3 px-3 py-2 w-fit text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="instagram"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="youtube"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="w-full px-4 splide__slide lg:max-w-lg">
+                                <div class="rounded-lg shadow-2xl card h-[25rem]">
+                                    <div class="flex flex-col items-center justify-center py-6 content">
+                                        <div class="relative mx-auto rounded-full img-profile">
+                                            <img src="../src/img/bg-profile.svg" alt="" class="">
+                                            <div class="absolute top-0 left-0 z-0 w-full h-full bg-profile">
+                                                <img src="../src/img/profile5.png"
+                                                    class="object-cover rounded-full aspect-square w-80 md:w-48">
+                                            </div>
+                                        </div>
+                                        <h1 class="mt-5 font-bold md:text-3xl sm:text-xl font-kufam">Mas Asep</h1>
+                                        <h5 class="font-medium font-dmSans text-primary">Kader</h5>
+                                        <div
+                                            class="absolute bottom-0 flex items-center justify-center gap-3 px-3 py-2 w-fit text-light h-fit rounded-tr-xl rounded-tl-xl bg-primary">
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="instagram"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="p-2 rounded-full sosmed bg-[#51BDB3] h-fit">
+                                                    <i data-lucide="youtube"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer -->
-    <footer class="px-8 py-6 mx-8 rounded-md font-dmSans text-dark bg-primary bg-opacity-10 my-7 lg:mx-20">
+    <footer class="px-8 py-6 mx-6 my-10 rounded-md font-dmSans text-dark bg-opacity-10 bg-primary lg:mx-20 md:mx-14">
         <div class="links md:flex">
-            <div class="address lg:w-1/4">
-                <img alt="" class="w-32 lg:w-52" src="../src/img/logo.svg">
+            <div class="lg:w-1/4 address">
+                <img src="../src/img/logo-fix.svg" alt="" class="w-32 lg:w-44">
                 <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
                 <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
                     Timur</p>
             </div>
-            <div class="info lg:w-1/4">
-                <h2 class="text-sm font-semibold lg:text-lg">Info</h2>
-                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
-                <div class="item-links">
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Tentang Kami</a>
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Keadaan daerahmu</a>
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Mitra</a>
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="">Daftar</a>
+            <div class="lg:w-1/4 info">
+                <h2 class="text-sm font-semibold lg:text-lg ">Info</h2>
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="tentang-kami.html" class="block text-xs font-normal leading-6 lg:text-base">Tentang
+                        Kami</a>
+                    <a href="search-suhu.html" class="block text-xs font-normal leading-6 lg:text-base">Keadaan
+                        daerahmu</a>
+                    <a href="#mitra" class="block text-xs font-normal leading-6 lg:text-base">Mitra</a>
+                    <a href="" class="block text-xs font-normal leading-6 lg:text-base">Daftar</a>
                 </div>
             </div>
-            <div class="text-lg font-semibold services lg:w-1/4">
+            <div class="text-lg font-semibold lg:w-1/4 services">
                 <h2 class="text-sm lg:text-lg">Layanan</h2>
-                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
-                <div class="item-links">
-                    <a class="block text-xs font-normal leading-6 hover:underline lg:text-base" href="#">Artikel</a>
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Bank Sampah</a>
-                    <a class="block text-xs font-normal leading-6 lg:text-base" href="#">Kegiatan Relawan</a>
+                <div class="w-1/2 h-0.5 line opacity-50 bg-primary rounded"></div>
+                <div class="item-links ">
+                    <a href="#" class="block text-xs font-normal leading-6 hover:underline lg:text-base">Artikel</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Bank Sampah</a>
+                    <a href="#" class="block text-xs font-normal leading-6 lg:text-base">Kegiatan Relawan</a>
                 </div>
             </div>
-            <div class="text-lg font-semibold contact lg:w-1/4" id="contact">
+            <div class="text-lg font-semibold lg:w-1/4 contact" id="contact">
                 <h2 class="text-sm lg:text-lg">Hubungi</h2>
-                <div class="line bg-primary h-0.5 w-1/2 rounded opacity-50"></div>
-                <div class="item-links">
-                    <a class="block my-2 font-normal" href="">
-                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                <div class="w-1/2 h-0.5 line bg-primary opacity-50 rounded"></div>
+                <div class="item-links ">
+                    <a href="" class="block my-2 font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
                             <i data-lucide="mail"></i>
                             <span class="underline">timlaksmi@gmail.com</span>
                         </div>
                     </a>
-                    <a class="block font-normal" href="">
-                        <div class="flex items-center gap-1 text-xs email lg:text-base">
+                    <a href="" class="block font-normal">
+                        <div class="flex items-center gap-1 text-xs lg:text-base email">
                             <i data-lucide="phone"></i>
                             <span>0839-2394-2310</span>
                         </div>
@@ -293,19 +557,19 @@
                     <div class="flex gap-2 mt-3 sosmed">
                         <a href="">
                             <div
-                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
                                 <i data-lucide="instagram"></i>
                             </div>
                         </a>
                         <a href="">
                             <div
-                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
                                 <i data-lucide="facebook"></i>
                             </div>
                         </a>
                         <a href="">
                             <div
-                                class="text-primary sosmed rounded-full bg-[#51BDB3] bg-opacity-20 p-2 text-xs lg:text-base">
+                                class="p-2  text-xs lg:text-base bg-opacity-20 text-primary rounded-full sosmed bg-[#51BDB3]">
                                 <i data-lucide="youtube"></i>
                             </div>
                         </a>
@@ -313,11 +577,32 @@
                 </div>
             </div>
         </div>
-        <div class="line bg-primary mt-2 h-0.5 rounded opacity-50"></div>
-        <div class="mt-1 font-semibold text-center copyright sm:text-xs">
+        <div class="h-0.5  mt-2 line bg-primary opacity-50 rounded"></div>
+        <div class="mt-1 font-semibold text-center sm:text-xs copyright">
             Laksmi Team ©2023
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+    <script>
+        let slider_team = new Splide('#slider-team', {
+            rewind: true,
+            perPage: 5,
+            breakpoints: {
+                1440: {
+                    perPage: 4,
+                },
+                1050: {
+                    perPage: 3,
+                },
+                760: {
+                    perPage: 2,
+                },
+                400: {
+                    perPage: 1,
+                }
+            },
+        }).mount();
+    </script>
     <script src="../src/scripts/script.js"></script>
 </body>
 

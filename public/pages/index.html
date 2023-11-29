@@ -14,76 +14,71 @@
 </head>
 
 <body class="overflow-x-hidden bg-light">
-  <nav class="relative flex items-center justify-between px-6 pt-4 md:px-15 lg:px-20 bg-light">
-    <a href="">
-      <img class="w-4/5 cursor-pointer md:w-full" src="../src/img/logo.svg" alt="Logo">
-    </a>
-    <button class="flex items-center p-2 border-2 rounded-md lg:hidden navbar-burger text-dark border-primary">
+  <nav
+    class="fixed top-0 z-50 flex items-center justify-between w-full px-6 py-4 text-base font-semibold text-gray-600 lg:py-6 md:px-14 lg:px-20 bg-light ">
+    <a href="index.html"><img class="h-10 md:h-14 lg:h-12" src="../src/img/logo-fix.svg" alt="Logo"></a>
+    <button class="flex items-center p-2 border-2 rounded-md lg:hidden navbar-burger border-primary">
       <svg class="block w-3 h-3 md:h-4 md:w-4" fill="fill-current" viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
       </svg>
     </button>
     <ul
-      class="absolute hidden font-semibold transform -translate-x-1/2 -translate-y-1/2 font-dmSans top-1/2 left-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-      <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Beranda</a></li>
-      <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Aktivitas</a></li>
-      <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#">Artikel</a></li>
-      <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="tentang-kami.html">Tentang kami</a>
-      </li>
-      <li><a class="px-3 text-sm font-dmSans text-dark hover:text-primary" href="#contact">Kontak</a></li>
+      class="absolute hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+      <li><a class="px-3 hover:text-primary" href="index.html">Beranda</a></li>
+      <li><a class="px-3 hover:text-primary" href="event.html">Aktivitas</a></li>
+      <li><a class="px-3 hover:text-primary" href="artikel.html">Artikel</a></li>
+      <li><a class="px-3 hover:text-primary" href="tentang-kami.html">Tentang kami</a></li>
+      <li><a class="px-3 hover:text-primary" href="tentang-kami.html/#kontak">Kontak</a></li>
     </ul>
-    <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-1.5 px-4 bg-primary hover:bg-teal-600 hover:border-teal-600 border-2 border-primary text-sm text-light font-normal rounded-md transition duration-200"
-      href="#">Daftar</a>
-    <a class="hidden lg:inline-block py-1.5 px-4 bg-light hover:border-teal-600 border-2 border-primary text-sm hover:text-primary text-dark font-normal rounded-md transition duration-200"
-      href="#">Masuk</a>
+    <div class="hidden text-base lg:inline-block">
+      <a class="transition-all ease-in-out duration-300 py-1.5 px-4 lg:ml-auto lg:mr-3 bg-primary hover:bg-teal-600 hover:border-teal-600 border-2 border-primary text-light rounded-md"
+        href="regist.html">Daftar</a>
+      <a class="transition-all ease-in-out duration-300 py-1.5 px-4 bg-light hover:border-teal-600 border-[3px] border-primary hover:text-primary rounded-md"
+        href="login.html">Masuk</a>
+    </div>
   </nav>
-  <div class="relative z-50 hidden navbar-menu">
-    <nav class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
-      <div class="flex items-center mb-8">
-        <a class="mr-auto text-3xl font-bold leading-none cursor-pointer" href="#">
-          <img class="h-10 lg:h-12" src="../src/img/logo.svg" alt="Logo">
+  <div class="relative hidden mt-12 navbar-menu">
+    <nav class="bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto border-r bg-light">
+      <div class="flex items-center mb-8 justify-self-end">
+        <a class="hidden mr-auto text-3xl font-bold leading-none" href="index.html">
+          <img class="h-10 lg:h-12" src="../src/img/logo-fix.svg" alt="Logo">
         </a>
-        <button class="navbar-close">
-          <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+        <button class="ml-4 navbar-close">
+          <svg class="w-6 h-6 cursor-pointer text-primary hover:text-secondary" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
       <div>
-        <ul>
-          <li class="mb-1"><a
-              class="block p-4 text-sm font-semibold rounded text-dark hover:text-primary hover:bg-teal-50"
-              href="#">Beranda</a></li>
-          <li class="mb-1"><a
-              class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-              href="#">Aktivitas</a></li>
-          <li class="mb-1"><a
-              class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-              href="#">Artikel</a></li>
-          <li class="mb-1"><a
-              class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-              href="tentang-kami.html">Tentang Kami</a></li>
-          <li class="mb-1"><a
-              class="block p-4 text-sm font-semibold text-gray-600 rounded hover:text-primary hover:bg-teal-50"
-              href="#">Kontak</a></li>
+        <ul class="space-y-1 font-semibold text-gray-600">
+          <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50" href="index.html">Beranda</a>
+          </li>
+          <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50" href="event.html">Aktivitas</a>
+          </li>
+          <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50" href="artikel.html">Artikel</a>
+          </li>
+          <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50" href="tentang-kami.html">Tentang
+              Kami</a></li>
+          <li><a class="block p-4 text-sm rounded hover:text-primary hover:bg-teal-50"
+              href="tentang-kami.html#kontak">Kontak</a></li>
         </ul>
       </div>
       <div class="mt-auto">
         <div class="pt-6">
           <a class="block px-4 py-3 mb-3 text-xs font-semibold leading-loose text-center bg-gray-50 hover:bg-gray-100 rounded-xl"
-            href="regist.html">Daftar</a>
+            href="#">Daftar</a>
           <a class="block px-4 py-3 mb-2 text-xs font-semibold leading-loose text-center text-white bg-primary hover:bg-teal-600 rounded-xl"
-            href="login.html">Masuk</a>
+            href="#">Masuk</a>
         </div>
         <p class="my-4 text-xs text-center text-gray-400">
           <span>Laksmi Team © 2023</span>
         </p>
       </div>
     </nav>
-  </div>
-  <header class="flex items-center justify-center w-screen mt-8 md:mt-0 md:px-20 px-14">
+  </div> <!-- END HEADER -->
+  <header class="flex items-center mt-20 md:mt-[6.5rem] justify-center w-screen  md:px-20 px-14">
     <div class="flex flex-col items-center gap-8 md:w-1/2 hero-text md:items-start ">
       <div
         class="text-center sm:font-semibold text-h3 md:text-3xl lg:text-5xl xl:text-6xl text md:text-left hero-quote font-kufam"
@@ -110,12 +105,11 @@
     <div class="section-notice h-1/4 md:px-20 px-14 py-5 mt-10 md:mt-0 md:flex md:items-center bg-[#EEF9F7]">
       <div class="notice-text md:flex-1 md:leading-10">
         <h1 class="pb-3 text-h6 md:text-xl lg:text-2xl">Keadaan <span class="text-primary">Bumi Kita</span></h1>
-        <h2 class="relative text-h5 md:text-2xl lg:text-4xl">
+        <h2 class="relative text-lg font-bold font-kufam md:text-2xl lg:text-4xl">
           Peringatan BMKG,
           <span class="relative inline-block">
             <span class="relative z-20">Bumi Kian Panas Mendidih</span>
-            <span
-              class="absolute left-0 right-0 h-2 transform -skew-x-12 bottom-1 lg:-bottom-1 lg:h-3 bg-danger"></span>
+            <span class="absolute left-0 right-0 h-2 transform -skew-x-12 bottom-1 lg:bottom-1 lg:h-3 bg-danger"></span>
           </span>,
           Sudah Terjadi di RI
         </h2>
@@ -141,15 +135,15 @@
       <div class="relative boxes">
         <div class="relative w-10/12 rounded md:w-2/3 h-[18rem] md:h-[20rem] box bg-primary top-44">
           <div class="absolute w-full py-10 pl-20 pr-6 rounded md:px-24 h-fit box bg-light bottom-6 right-7">
-            <h1 class="mb-5 text-lg font-semibold md:text-2xl font-kufam">Siapasih Kami?</h1>
+            <h1 class="mb-5 text-lg font-semibold md:text-2xl font-kufam">Siapa sih Kami?</h1>
             <p class="font-normal text-justify text-sm md:text-xl sm:text-xs font-dmSans text-[#4A4A4A]">
               <!-- <img src="../src/img/logo.svg" alt="Image description" class="float-left w-28 md:w-36 "> -->
-              <span class="text-2xl font-semibold text-primary ">Laksmi</span> adalah organisasi lingkungan yang
+              <span class="text-2xl font-semibold text-dark ">Laksmi</span> adalah organisasi lingkungan yang
               berdedikasi untuk melindungi keberlanjutan alam dan mewujudkan
               lingkungan yang lebih hijau. Didirikan oleh sekelompok individu yang peduli pada lingkungan, Laksmi
               berusaha menginspirasi perubahan positif dalam perilaku dan kesadaran masyarakat.
             </p>
-            <a href="#"
+            <a href="tentang-kami.html"
               class="flex items-center gap-1 px-2 py-1 mt-6 text-xs font-semibold rounded w-fit md:px-3 md:py-2 md:text-lg text-light bg-primary font-dmSans">Selengkapnya
               <i data-lucide="move-right" class="text-xs"></i></a>
           </div>
@@ -202,7 +196,7 @@
     </div>
     <!-- team section -->
     <div class="mt-10 section-team">
-      <h1 class="text-2xl text-center font-kufam text-dark">Tim <span class="text-primary">Kami</span></h1>
+      <h1 class="text-2xl font-bold text-center font-kufam text-dark">Tim <span class="text-primary">Kami</span></h1>
       <div>
         <div class="splide" id="slider-team">
           <div class="splide__arrows">
@@ -435,10 +429,10 @@
       </div>
     </div>
     <!-- articels section -->
-    <div class="px-10 mt-6 md:px-20 section-articels ">
+    <div class="mx-6 mt-6 lg:mx-20 md:mx-14 section-articels ">
       <div class="flex items-center justify-between header ">
         <h1 class="text-lg font-bold md:text-2xl font-kufam">Artikel Buat <span class="text-primary">Kamu</span></h1>
-        <a href="#" class="text-xs font-medium underline md:text-xl text-primary">Kepoin Kegiatan Kami</a>
+        <a href="event.html" class="text-xs font-medium underline md:text-xl text-primary">Cari tahu Kegiatan Kami</a>
       </div>
       <div class="grid grid-cols-1 gap-3 md:grid-cols-3 my-7 articels">
         <div class="hidden col-span-2 bg-[#EEF9F7] shadow-xl md:block">
@@ -463,10 +457,10 @@
                   <small class="text-[#5D5F5F] font-medium">Admin</small>
                 </div>
                 <div class="btn">
-                  <button
+                  <a href="detail-artikel.html"
                     class="flex items-center px-4 py-1 font-medium text-center rounded-full text-dark tag font-dmSans bg-primary bg-opacity-20">
                     Selengkapnya <i data-lucide="chevron-right"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -492,10 +486,10 @@
                 <small class="text-[#5D5F5F] font-medium">Admin</small>
               </div>
               <div class="btn">
-                <button
+                <a href="detail-artikel.html"
                   class="flex p-1.5 text-center rounded-full items-centerfont-medium text-dark tag font-dmSans bg-primary bg-opacity-20">
                   <i data-lucide="chevron-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -503,7 +497,7 @@
       </div>
     </div>
     <!-- photo section -->
-    <div class="my-10 md:px-20 px-14 section-photo " id="activities">
+    <div class="mx-6 my-10 lg:mx-20 md:mx-14 section-photo " id="activities">
       <h1 class="my-4 text-2xl font-bold text-center font-kufam">Aktifitas <span class="text-primary">Kami</span></h1>
       <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4 img-gallery">
         <figure class="relative w-full h-full xl:col-span-2 group ">
@@ -512,10 +506,11 @@
             style="content: ''; position: absolute;top:0;left: 0;right: 0;bottom: 0;">
           </div>
           <a href="#"
-            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-fit group-hover:opacity-80">
             <div>
-              <p class="text-sm text-gray-400">Kegiatan relawan</p>
               <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+              <p class="text-sm text-gray-400">Kegiatan yang diadakan di lingkungan kampung agar menumbuhkan kesadaran
+                masyarakat dalam kondisi suhu di masa mendatang</p>
             </div>
           </a>
         </figure>
@@ -525,10 +520,10 @@
             style="content: ''; position: absolute;top:0;left: 0;right: 0;bottom: 0;">
           </div>
           <a href="#"
-            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-fit group-hover:opacity-80">
             <div>
-              <p class="text-sm text-gray-400">Kegiatan relawan</p>
-              <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+              <h6 class="text-base font-medium text-black">Peduli Hutan Kalimantan</h6>
+              <p class="text-sm text-gray-400">Menananam 1000 pohon di kawasan bekas penebangan hutan liar</p>
             </div>
           </a>
         </figure>
@@ -537,10 +532,11 @@
           <div class="overlay  bg-[#27aea140] p-9"
             style="content: ''; position: absolute;top:0;left: 0;right: 0;bottom: 0;">
             <a href="#"
-              class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+              class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-fit group-hover:opacity-80">
               <div>
-                <p class="text-sm text-gray-400">Kegiatan relawan</p>
-                <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+                <h6 class="text-base font-medium text-black">Kegiatan sosialisasi</h6>
+                <p class="text-sm text-gray-400">Kegiatan sosialisasi dalam di masyarakat kota guna menumbuhkan
+                  kesadaran masyarakat kota</p>
               </div>
             </a>
           </div>
@@ -551,10 +547,11 @@
             style="content: ''; position: absolute;top:0;left: 0;right: 0;bottom: 0;">
           </div>
           <a href="#"
-            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-fit group-hover:opacity-80">
             <div>
-              <p class="text-sm text-gray-400">Kegiatan relawan</p>
-              <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+              <h6 class="text-base font-medium text-black">100 Pohon</h6>
+              <p class="text-sm text-gray-400">Laksmi mengajak seluruh warga sekitar hutan alaman memperbaiki kerusakan
+                alam</p>
             </div>
           </a>
         </figure>
@@ -564,10 +561,11 @@
             style="content: ''; position: absolute;top:0;left: 0;right: 0;bottom: 0;">
           </div>
           <a href="#"
-            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-1/2 group-hover:opacity-80">
+            class="absolute inset-x-0 bottom-0 flex items-end p-3 m-3 transition-all duration-500 bg-white rounded opacity-0 cursor-pointer h-fit group-hover:opacity-80">
             <div>
-              <p class="text-sm text-gray-400">Kegiatan relawan</p>
-              <h6 class="text-base font-medium text-black">Rebosisasi Hutan Gundul</h6>
+              <h6 class="text-base font-medium text-black">Tantangan Jalan kaki ke toko</h6>
+              <p class="text-sm text-gray-400">Tantangan yang dilaksanakan oleh anggota komunitas laksmi guna mengurangi
+                penggunaan emisi pada kendaraan bermotor</p>
             </div>
           </a>
         </figure>
@@ -580,10 +578,10 @@
     </div>
   </main>
   <!-- footer -->
-  <footer class="px-8 py-6 my-10 rounded-md font-dmSans text-dark bg-opacity-10 bg-primary md:mx-20 mx-14">
+  <footer class="px-8 py-6 mx-6 my-10 rounded-md font-dmSans text-dark bg-opacity-10 bg-primary lg:mx-20 md:mx-14">
     <div class="links md:flex">
       <div class="lg:w-1/4 address">
-        <img src="../src/img/logo.svg" alt="" class="w-32 lg:w-52">
+        <img src="../src/img/logo-fix.svg" alt="" class="w-32 lg:w-44">
         <h5 class="text-sm lg:text-lg">Kantor Pusar</h5>
         <p class="text-xs lg:text-base">Jl. Ikan Puas No. 75, Karangaji, Kec. Banyuwangi, Kab. Banyuwangi Jawa
           Timur</p>

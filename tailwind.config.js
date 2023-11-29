@@ -14,13 +14,21 @@ module.exports = {
         secondary: '#E5BC40',
         danger: '#D83F31',
         dark: '#1E1E1E',
-        light: '#F9F9F9',
+        light: '#FDFDFD',
         customteal1: 'rgba(39, 174, 161, 0.25)',
         customteal2: 'rgba(39, 174, 161, 0.00)',
+      },
+      boxShadow: {
+        boxPrimary: '3px -3px 0 0 #27AEA1',
+        boxLight: '-1px 1px 0 0 #4DB0A6',
+        boxDark: '2px 2px 0 0 #494949',
       },
       fontFamily: {
         kufam: ['kufam', 'system-ui'],
         dmSans: ['DM Sans', 'system-ui'],
+      },
+      scale: {
+        '-100': '-1',
       },
       fontSize: {
         h1: [
