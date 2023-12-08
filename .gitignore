@@ -1,37 +1,37 @@
-# # Node.js
-# node_modules/
+# Node.js
+node_modules/
 
-# # Compiled output
-# /dist/
-# /build/
+# Compiled output
+/dist/
+/build/
 
-# # Yarn
-# yarn-error.log
+# Yarn
+yarn-error.log
 
-# # npm
-# *.log
-# *.lock
-# node_modules/
+# npm
+*.log
+*.lock
+node_modules/
 
-# # Dependency directories
-# pids
-# logs
-# results
+# Dependency directories
+pids
+logs
+results
 
-# # Local development files
-# .env*
+# Local development files
+.env*
 
-# # Editor directories
-# .idea/
-# .vscode/
+# Editor directories
+.idea/
+.vscode/
 
-# # Mac
-# .DS_Store
+# Mac
+.DS_Store
 
-# # Windows
-# Thumbs.db
-# Desktop.ini
+# Windows
+Thumbs.db
+Desktop.ini
 
-# # Tailwind CSS
-# .cache/
-# output.css
+# Tailwind CSS
+.cache/
+output.css
